@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="THE MYSTERIES OF THE LIFE OF CHRIST OUR LORD"
+            style="@style/documentTitle"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE ANNUNCIATION OF OUR LADY"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content1"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE VISITATION OF OUR LADY TO ELIZABETH"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content2"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE BIRTH OF CHRIST OUR LORD"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content3"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE SHEPHERDS"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content4"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE CIRCUMCISION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content5"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="OF THE THREE MAGI KINGS"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content6"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE PURIFICATION OF OUR LADY AND PRESENTATION OF THE CHILD JESUS"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content7"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE FLIGHT TO EGYPT"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content8"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:text="OF HOW CHRIST OUR LORD RETURNED FROM EGYPT"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content9"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE LIFE OF CHRIST OUR LORD FROM TWELVE TO THIRTY YEARS"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content10"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE COMING OF CHRIST TO THE TEMPLE\n WHEN HE WAS OF THE AGE OF\n TWELVE YEARS"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content11"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF HOW CHRIST WAS BAPTIZED"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content12"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF HOW CHRIST WAS TEMPTED"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content13"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_sub_title16"
+            android:layout_below="@+id/txt_content13"
+            android:text="OF THE CALL OF THE APOSTLES"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content14"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_sub_title17"
+            android:layout_below="@+id/txt_content14"
+            android:text="OF THE FIRST MIRACLE\n PERFORMED AT THE MARRIAGE OF CANA, GALILEE"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content15"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF HOW CHRIST CAST OUT OF THE TEMPLE\n THOSE WHO WERE SELLING"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content16"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE SERMON WHICH CHRIST MADE ON THE MOUNT"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content17"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF HOW CHRIST OUR LORD MADE THE TEMPEST OF THE SEA BE CALM"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content18"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF HOW CHRIST WALKED ON THE SEA"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content19"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF HOW THE APOSTLES WERE SENT TO PREACH"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content20"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE CONVERSION OF MAGDALEN"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content21"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF HOW CHRIST OUR LORD GAVE TO EAT FIVE THOUSAND MEN"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content22"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE TRANSFIGURATION OF CHRIST"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content23"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE RESURRECTION OF LAZARUS"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content24"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE SUPPER AT BETHANY"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content25"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="PALM SUNDAY"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content26"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE PREACHING IN THE TEMPLE"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content27"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE SUPPER"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content28"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE MYSTERIES DONE FROM THE SUPPER TO THE GARDEN, INCLUSIVE"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content29"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE MYSTERIES DONE FROM THE GARDEN TO THE HOUSE OF ANNAS, INCLUSIVE"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content30"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE MYSTERIES DONE FROM THE GARDEN TO THE HOUSE OF ANNAS, INCLUSIVE"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content31"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE MYSTERIES DONE FROM THE HOUSE OF CAIPHAS TO THAT OF PILATE, INCLUSIVE"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content32"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE MYSTERIES DONE FROM THE HOUSE OF PILATE TO THAT OF HEROD"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content33"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE MYSTERIES DONE FROM THE HOUSE OF HEROD TO THAT OF PILATE"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content34"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE MYSTERIES DONE FROM THE HOUSE OF PILATE TO THE CROSS, INCLUSIVE"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content35"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:text="OF THE MYSTERIES ON THE CROSS"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content36"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OF THE MYSTERIES FROM THE CROSS TO THE SEPULCHRE, INCLUSIVE"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content37"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE RESURRECTION OF CHRIST OUR LORD OF HIS FIRST APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content38"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE SECOND APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content39"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE THIRD APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content40"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:text="OF THE FOURTH APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content41"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:text="OF THE FIFTH APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content42"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE SIXTH APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content43"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="THE SEVENTH APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content44"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE EIGHTH APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content45"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE NINTH APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content46"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE TENTH APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content47"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE ELEVENTH APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content48"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE TWELFTH APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content49"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="OF THE THIRTEENTH APPARITION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content50"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="OF THE ASCENSION OF CHRIST OUR LORD"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/spe_the_mysteries_of_the_life_of_christ_our_lord_content51"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_below="@+id/txt_content16"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

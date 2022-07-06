@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adusum.ProbationActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/logowithtext"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+    <TextView
+        android:text="Your details have been received succesfully, please allow us sometime to review them inorder to activate an account for you. Thank you."
+        android:padding="15dp"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/probationbuttonhome"
+        android:text="Back home"
+        android:padding="15dp"
+        android:textColor="@color/green"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

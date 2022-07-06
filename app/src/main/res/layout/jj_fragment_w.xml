@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:text="W"
+        style="@style/letterHeads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Waterfront priest."
+        style="@style/jargonmaroonTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/w_para1"
+        style="@style/paragraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Women Jesuits."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/w_para2"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Woodstock College."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/w_para3"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Woodstock Letters."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/w_para4"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="World is our house/home."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/w_para5"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="“Wrinkles on the forehead and much more on the nose are to be avoided.”"
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/w_para6"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

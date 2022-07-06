@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/spe_title_one"
+            android:text="THE CALL OF THE TEMPORAL KING"
+            style="@style/documentTitle"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/spe_sub_title1"
+            android:layout_below="@+id/spe_title_one"
+            android:text="@string/spe_the_call_of_the_temporal_king_sub1"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/spe_sub_title2"
+            android:layout_below="@+id/spe_sub_title1"
+            android:text="@string/spe_the_call_of_the_temporal_king_sub2"
+            android:textSize="17sp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content"
+            android:layout_below="@+id/spe_sub_title2"
+            android:text="@string/spe_the_call_of_temporal_king_content"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_sub_title3"
+            android:layout_below="@+id/txt_content"
+            android:text="@string/spe_the_call_of_the_temporal_king_sub3"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content2"
+            android:layout_below="@+id/spe_sub_title3"
+            android:text="@string/spe_the_call_of_temporal_king_content_two"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_below="@+id/txt_content2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

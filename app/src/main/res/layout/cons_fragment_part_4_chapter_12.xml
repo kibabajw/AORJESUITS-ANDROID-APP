@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:text="CHAPTER 12"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:text="@string/str_cons_part_4_chapter_12_title"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_4_chapter_12_body"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_4_chapter_12_italic_body"
+            style="@style/paragraphItalicText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_4_chapter_12_body_1"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_4_chapter_12_italic_body_1"
+            style="@style/paragraphItalicText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_4_chapter_12_body_2"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

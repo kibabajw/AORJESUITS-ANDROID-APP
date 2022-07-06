@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".merchandise.MerchandiseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarMerchandise"
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            app:title="Grateful Goods"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewMerchandise"
+            android:layout_width="match_parent"
+            android:layout_height="435dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:text="WE HIGHLY APPRECIATE DONATIONS AND BUYS:"
+            android:textColor="@color/maroon"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:text="They go a long way in helping maintain the
+            projects, which we have initiated regionally
+            that help a lot of people in need!"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextColor="@color/white"
+                app:hintTextColor="@color/maroon">
+                <EditText
+                    android:id="@+id/editmerchFullname"
+                    android:hint="Full Name"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextColor="@color/white"
+                app:hintTextColor="@color/maroon">
+                <EditText
+                    android:id="@+id/editmerchEmail"
+                    android:hint="Email address"
+                    android:textColorHint="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextColor="@color/white"
+                app:hintTextColor="@color/maroon">
+                <EditText
+                    android:id="@+id/editmerchPhone"
+                    android:hint="Phone Number"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/editmerchDescription"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:hint="Description goes here"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnmerchSubmit"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true"
+                android:text="SUBMIT"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:background="@drawable/learnmore"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="BUY NOW"
+                android:textStyle="bold"
+                android:textColor="@color/maroon"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_marginTop="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:text="@string/str_buy_now"
+                android:textSize="23sp"
+                android:lineSpacingExtra="@dimen/fab_margin"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:text="Bank Details"
+                android:textStyle="bold"
+                android:textColor="@color/maroon"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:text="@string/str_bank_details"
+                android:textSize="23sp"
+                android:lineSpacingExtra="@dimen/fab_margin"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

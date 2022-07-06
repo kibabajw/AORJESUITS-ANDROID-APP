@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/spe_title_one"
+            android:text="@string/spe_fragment_second_contemplation_title"
+            style="@style/documentTitle"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content"
+            android:layout_below="@+id/spe_title_one"
+            android:text="@string/spe_second_contemplation_content"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_title_two"
+            android:layout_below="@+id/txt_content"
+            android:text="THE THIRD CONTEMPLATION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/spe_title_three"
+            android:layout_below="@+id/spe_title_two"
+            android:text="WILL BE A REPETITION OF THE FIRST AND SECOND EXERCISE"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content1"
+            android:layout_below="@+id/spe_title_three"
+            android:text="@string/spe_second_contemplation_content1"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_title4"
+            android:layout_below="@+id/txt_content1"
+            android:text="THE FOURTH CONTEMPLATION WILL BE A REPETITION OF THE FIRST AND SECOND"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content5"
+            android:layout_below="@+id/spe_title4"
+            android:text="In the same way as was done in the above-mentioned repetition."
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/spe_title5"
+            android:layout_below="@+id/txt_content5"
+            android:text="THE FIFTH CONTEMPLATION
+WILL BE TO BRING THE FIVE SENSES ON THE FIRST AND SECOND
+CONTEMPLATION"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content6"
+            android:layout_below="@+id/spe_title5"
+            android:text="@string/spe_second_contemplation_content2"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_title6"
+            android:layout_below="@+id/txt_content6"
+            android:text="THE SECOND DAY"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content7"
+            android:layout_below="@+id/spe_title6"
+            android:text="@string/spe_second_contemplation_content3"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_title7"
+            android:layout_below="@+id/txt_content7"
+            android:text="THE THIRD DAY"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content8"
+            android:layout_below="@+id/spe_title7"
+            android:text="@string/spe_second_contemplation_content4"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_below="@+id/txt_content8"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

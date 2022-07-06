@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:text="Jerome Nadal’s\n Foreword"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:textSize="26sp"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/tp_para_foreword"
+        style="@style/paragraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:text="S"
+        style="@style/letterHeads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Sacred Silence."
+        style="@style/jargonmaroonTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/s_para1"
+        style="@style/paragraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Sadhana."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para2"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="“Satis.” Enough!"
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para3"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Schola Brevis."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para4"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Scullery."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para5"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Seal of confession."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para6"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Second table."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para7"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Seismology."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para8"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Secchi and Sestini."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para9"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Secchi disk."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para10"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Seven Hill."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para11"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Short course/long course."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para12"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Sickness no less than health is a gift from God."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para13"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Society of Love."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para14"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Socius."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para15"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Sogang University Seoul, South Korea."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para16"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Solemn profession."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para17"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Soli."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para18"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Solvitur ambulando."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para19"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Sophia University Tokyo."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para20"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Sources Chrétiennes."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para21"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Spiritual coadjutor, temporal coadjutor."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para22"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Spiritual Exercises."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para23"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Status."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para24"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Steel Priest."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para25"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Superior General. The General Superior."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para26"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Suppression."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para27"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Suscipe, Sume et Suscipe. Take, Lord and Receive."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para28"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="SABBATUM:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para29"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SACERDOTES:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para30"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SCHOLASTICI (Schol.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para31"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SCRIPTURA SACRA (Script. Sac.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para32"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SECRETARIUS (Secr.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para33"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SECRETUM:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para34"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SIGILLUM:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para35"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SEMINARIUM (Sem.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para36"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SOCIUS (Soc.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para37"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SODALITATES (Sodal.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para38"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SUBSTITUTUS (Substit.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para39"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SUPERIOR (Sup.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para40"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="SUMMARIUM:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/s_para41"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

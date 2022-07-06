@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/titleone"
+            style="@style/documentTitle"
+            android:text="PARTICULAR AND DAILY EXAMEN"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content_one"
+            android:layout_below="@+id/titleone"
+            style="@style/paragraphText"
+            android:text="@string/spe_particular_and_daily_examen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/titletwo"
+            style="@style/documentTitle"
+            android:layout_below="@+id/txt_content_one"
+            android:text="FOUR ADDITIONS"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/titlethree"
+            style="@style/documentTitle"
+            android:layout_below="@+id/titletwo"
+            android:text="FOLLOW TO RID ONESELF SOONER OF THAT PARTICULAR SIN OR DEFECT"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_below="@+id/titlethree"
+            android:id="@+id/txt_content_two"
+            style="@style/paragraphText"
+            android:text="@string/spe_four_additions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_below="@+id/txt_content_two"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

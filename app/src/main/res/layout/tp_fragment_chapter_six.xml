@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:text="chapter six"
+        android:textColor="@color/maroon"
+        android:textSize="36sp"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:fontFamily="@font/matescregular"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Barcelona and Alcalá\n 1524-1527"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/tp_chap_six_para"
+        style="@style/paragraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#666"/>
+
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/tp_chap_six_expla"
+        android:textColor="#444"
+        android:textStyle="italic"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/tp_chap_six_para_cont"
+        style="@style/paragraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#666"/>
+
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/tp_chap_six_expla_1"
+        android:textColor="#444"
+        android:textStyle="italic"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/tp_chap_six_para_cont_1"
+        style="@style/paragraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

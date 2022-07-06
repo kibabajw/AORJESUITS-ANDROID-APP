@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:text="R"
+        style="@style/letterHeads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Rabat."
+        style="@style/jargonmaroonTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/r_para1"
+        style="@style/paragraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Ratio Studiorum."
+        style="@style/jargonmaroonTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/r_para2"
+        style="@style/paragraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Rector."
+        style="@style/jargonmaroonTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/r_para3"
+        style="@style/paragraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:text="Reductions, Paraguayan Reductions."
+        style="@style/jargonmaroonTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.codesgood.views.JustifiedTextView
+        android:text="@string/r_para4"
+        style="@style/paragraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Refectory refectorian"
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para5"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Regency regent"
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para6"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Regimini Militantis Ecclesiae."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para7"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Renovation, renewal of vows."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para8"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Repetitio est mater studiorum."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para9"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Restoration."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para10"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Retreat."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para11"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Ricci, Matteo."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para12"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Rodriguez, Alphonsus."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para13"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Roman College."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para14"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Rule of touch."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para15"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Rules for Conversation."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para16"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="RATIO CONSCIENTIAE:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para17"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="RATIO STUDIORUM:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para18"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="RECTORES (Rect.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para19"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="REGENS (Regens Seminarii; seminary director) (Reg. Sem.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para20"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="REGULAE:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para21"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="RENOVATIO:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para22"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="REPETENTES:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para23"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="RESIDENTIAE (Resid.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para24"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="REVISORES GENERALES (Rev. Gen.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para25"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="RHETORICA (Rhet.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/r_para26"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

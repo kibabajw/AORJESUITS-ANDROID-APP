@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:text="CHAPTER 7"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:text="@string/str_cons_chapter_seven_title"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_chapter_seven_body"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_chapter_seven_italic_body"
+            style="@style/paragraphItalicText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#666"/>
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_chapter_seven_notes_to_chapter_1"
+            style="@style/notesToChapterStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_chapter_seven_italic_body_1"
+            style="@style/paragraphItalicText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_chapter_seven_body_1"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#666"/>
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_chapter_seven_notes_to_chapter_2"
+            style="@style/notesToChapterStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/str_cons_chapter_seven_title_2"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_chapter_seven_body_2"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

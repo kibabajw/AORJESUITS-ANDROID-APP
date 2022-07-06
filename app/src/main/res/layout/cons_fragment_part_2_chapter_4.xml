@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+    <TextView
+        android:text="CHAPTER 4"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:text="@string/str_cons_part_2_chapter_4_title"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_body"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_notes"
+            style="@style/notesToChapterStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_italic_body"
+            style="@style/paragraphItalicText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="THE MANNER OF PROCEEDING WITH THOSE WHO ARE DISMISSED"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_body_1"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_notes_1"
+            style="@style/notesToChapterStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_body_2"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_notes_2"
+            style="@style/notesToChapterStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_body_3"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_notes_3"
+            style="@style/notesToChapterStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_body_4"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_italic_body_1"
+            style="@style/paragraphItalicText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_body_5"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_notes_4"
+            style="@style/notesToChapterStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_italic_body_2"
+            style="@style/paragraphItalicText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/str_cons_part_2_chapter_4_body_6"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

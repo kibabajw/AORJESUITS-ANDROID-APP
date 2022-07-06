@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:text="E"
+        style="@style/letterHeads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="Effusio ad exteriora."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para1"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Election."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para2"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Eloquentia perfecta. Perfect eloquence."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para3"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="English permissions."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para4"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Epikeia."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para5"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Epitome. Epitome Instituti Societatis Iesu."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para6"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Ex aliunde. ‘from another place.’"
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para7"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Examen. Examination of conscience."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para8"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Examen beads."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para9"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Exclaustration."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para10"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Exhortation. Domestic exhortation."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para11"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Expect Dest. Expectans destinationem."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para12"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Experiments. Also called ‘testing experiences.’"
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para13"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Explicitate."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para14"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Exposcit debitum."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para15"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Externs."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para16"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="ECCLESIA (Eccl.) church:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para17"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="EMMANUEL:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para18"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="EPISTOLAE:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para19"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="EXAMEN:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para20"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="EXCERPTA (ex litteris Consultorum):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para21"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="EXERCITIA SPIRITUALIA [Spiritual Exercises]:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para22"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="EXPERIMENTA:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/e_para23"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

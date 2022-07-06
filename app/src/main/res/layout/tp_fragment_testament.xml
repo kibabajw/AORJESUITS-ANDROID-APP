@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="A Pilgrim’s Testament"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/matescregular"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="The Memoirs of St. Ignatius of Loyola"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="serif"
+                android:layout_marginTop="35dp"
+                android:lineSpacingExtra="@dimen/fab_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="As transcribed by\n Luis Gonçalves da Câmara"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="serif"
+                android:layout_marginTop="35dp"
+                android:lineSpacingExtra="@dimen/fab_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="And"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="serif"
+                android:layout_marginTop="35dp"
+                android:lineSpacingExtra="@dimen/fab_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Translated by\n Parmandanda R. Divarkar"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="serif"
+                android:layout_marginTop="35dp"
+                android:lineSpacingExtra="@dimen/fab_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:lineSpacingExtra="@dimen/fab_margin"
+                    android:text="Saint Louis\n The Institute of Jesuit Sources\n 1995"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

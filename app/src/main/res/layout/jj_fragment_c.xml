@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:text="C"
+        style="@style/letterHeads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="Call of the King. And The Kingdom of Christ."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para1"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Camellia."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para2"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Campion’s Brag."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para3"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Candidacy."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para4"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Canisius."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para5"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Cardinals, Jesuit."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para6"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Cardoner, vision at."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para7"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Casus conscientiae."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para8"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Catalogus."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para9"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Catena. Chain."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para10"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Catherine the Great."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para11"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Catherine of Alexandria, St."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para12"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Celebret."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para13"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="CG 32."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para14"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Chapter."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para15"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Chinese Rites Controversy."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para16"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Civilta Cattolica. Catholic Civilization."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para17"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Clavius, Christopher."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para18"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="CLC / Sodality / confraternity. Christian Life Community."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para19"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Coadjutor Brother."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para20"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Coena."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para21"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Colloquy. Conversation."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para22"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Common life."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para23"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Common stock."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para24"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Company Magazine."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para25"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Company of Jesus."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para26"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Composition of Place."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para27"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Consciousness Examen."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para28"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Consolation – desolation."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para29"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Constitutions."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para30"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Consueta ministeria."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para31"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Consultors."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para32"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Contemplation to Attain the Love of God."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para33"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Contemplatives in Action."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para34"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Conversation."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para35"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Corn bread and stew. (panem aureum)"
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para36"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Corollary."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para37"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="“Corporation of the Catholic Gentlemen of Maryland.”"
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para38"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Cristo Rey Network."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para39"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Culpa."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para40"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Cura animarum."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para41"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Cura personalis."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para42"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Curia."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para43"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="Book of the American Assistancy."
+            style="@style/jargonmaroonTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para44"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CANNE:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para45"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CASUUM PROFESSOR (Prof. Cas.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para46"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CATALOGI:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para47"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CATECHISTA (Catech.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para48"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="COLLATERALIS:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para49"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CENSURAE:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para50"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="COADIUTORES (Coad.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para51"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="COLLEGIUM (Coll.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para52"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="COMMISSIONE (ex c.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para53"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CONCIONATOR (Conc.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para54"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CONFESSARIUS (Conf.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para55"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CONGREGATIO (Congr.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para56"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CONSUETUDINES:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para57"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CONSULTA (of a House, of a Province):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para58"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CONSULTORES (Cons.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para59"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CONTROVERSIAE (Controv.):"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para60"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CONVICTORES:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para61"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CONVICTUS:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para62"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="CREDENTIARIUS:"
+            style="@style/jargonbigblackTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/c_para63"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

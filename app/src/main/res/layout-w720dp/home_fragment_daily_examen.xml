@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp"
+    android:paddingLeft="65dp"
+    android:paddingRight="55dp"
+    android:background="@drawable/elephant"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:alpha="0.7">
+            <TextView
+                android:text="The Daily Examen"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/maroon"
+                android:fontFamily="@font/matescregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.codesgood.views.JustifiedTextView
+                android:text="@string/daily_examen"
+                style="@style/paragraphBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <TextView
+                    android:text="1. Become aware of God’s presence"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="21sp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/maroon"
+                    android:fontFamily="@font/matescregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:alpha="0.7"/>
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dailyexamenbecomeawareofgodspresence"
+                    android:layout_width="match_parent"
+                    android:layout_height="540dp"/>
+                <com.codesgood.views.JustifiedTextView
+                    android:text="@string/examen_one"
+                    style="@style/paragraphBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:alpha="0.7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="2. Review the day with gratitude"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/maroon"
+                android:fontFamily="@font/matescregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:alpha="0.7"/>
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/dailyexamenreviewthedaywithgratitude"
+                android:layout_width="match_parent"
+                android:layout_height="540dp"/>
+            <com.codesgood.views.JustifiedTextView
+                android:text="@string/examen_two"
+                style="@style/paragraphBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:alpha="0.7"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="3. Pay attention to your emotions"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/maroon"
+                android:fontFamily="@font/matescregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:alpha="0.7"/>
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/dailyexamenpayattentiontoyouremotions"
+                android:layout_width="match_parent"
+                android:layout_height="540dp"/>
+            <com.codesgood.views.JustifiedTextView
+                android:text="@string/examen_three"
+                style="@style/paragraphBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:alpha="0.7"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="4. Choose one feature of the day and pray from it"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/maroon"
+                android:fontFamily="@font/matescregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:alpha="0.7"/>
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/dailyexamenchooseonefeatureoftheday"
+                android:layout_width="match_parent"
+                android:layout_height="540dp"/>
+            <com.codesgood.views.JustifiedTextView
+                android:text="@string/examen_four"
+                style="@style/paragraphBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:alpha="0.7"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="5. Look toward tomorrow"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/maroon"
+                android:fontFamily="@font/matescregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:alpha="0.7"/>
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/dailyexamenlooktowardtomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="540dp"/>
+            <com.codesgood.views.JustifiedTextView
+                android:text="@string/examen_five"
+                style="@style/paragraphBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:alpha="0.7"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

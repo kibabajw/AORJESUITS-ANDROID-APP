@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="PRINCIPAL ABBREVIATIONS"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:text="AAS: Acta A postolicae Sedis"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="A ctRSJ: Acta Romana Societatis Iesu"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="c.: Chapter of a part of the Constitutions"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="GC: General Congregation"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="CCEO: Code of Canons of the Eastern Churches"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="CIC: Cod e of Canon Law"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="CollDecr: Collection of Decrees of General Congregations (ed . 1977)"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Const.: Constitutions of the Society of Jesus"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="d .: Decree of a general congregation"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Examen: General Examen of the Constitutions"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Form. of Cong.: Formula of a congregation (general, of procurators, of province, and so forth)"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="FI: Formula of the Institute of Paul III or of Julius III"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Inst.: Institute of the Society of Jesus (Florence, 1892)"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="M I: Monumenta Ignatiana"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="M HSI: Monumenta Historica Societatis Iesu"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="CN : Complementary Norms of the Constitutions of the Society of Jesus"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="P.: Part of the Constitutions"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="SpEx: Spiritual Exercises of Saint Ignatius"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/librebaskervilleitalicbold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="Apostolic letters and other pontifical documents are cited by the name of the pope and
+             the first words of the document, with volume and page numbers added , if the document is found in Inst., AAS, or in ActRSJ."
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_marginTop="35dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

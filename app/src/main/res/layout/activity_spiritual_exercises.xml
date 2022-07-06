@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oldbook"
+    tools:context=".spiritualexercises.SpiritualExercisesActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/activity_controller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/spetoolbar"
+            android:elevation="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+   <androidx.fragment.app.FragmentContainerView
+       android:id="@+id/container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/navList"
+        android:layout_gravity="left|start"
+        android:background="@color/white"
+        android:divider="@color/dividerColor"
+        android:dividerHeight="1dp"
+        android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorRight"
+        android:layout_width="235dp"
+        android:layout_height="match_parent">
+
+    </ExpandableListView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

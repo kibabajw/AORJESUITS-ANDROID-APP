@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".adusum.AdusumSettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAccountSettings"
+        android:layout_width="match_parent"
+        android:background="@color/maroon"
+        app:titleTextColor="@color/white"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/settingsusernameTextInputLayout"
+            android:layout_below="@+id/adusumLoginEditUsernameTextInputLayout"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextColor="@color/maroon"
+            app:hintTextColor="@color/maroon">
+        <EditText
+            android:hint="username"
+            android:textSize="22sp"
+            android:fontFamily="@font/robotomedium"
+            android:textColorHint="@color/register_input_color_hint"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:id="@+id/settingsEditusername"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/settingspasswordTextInputLayout"
+            android:layout_below="@+id/adusumLoginEditUsernameTextInputLayout"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextColor="@color/maroon"
+            app:hintTextColor="@color/maroon">
+        <EditText
+            android:hint="password"
+            android:textSize="22sp"
+            android:fontFamily="@font/robotomedium"
+            android:textColorHint="@color/register_input_color_hint"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="7dp"
+            android:id="@+id/settingsEditpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adusum.AskforRequestCodeActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:text="Please enter the rest code sent to your emaill-address."
+            android:textSize="19sp"
+            android:textColor="@color/maroon"
+            android:fontFamily="@font/robotomedium"
+            android:lineSpacingExtra="4dp"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/ask_for_reset_code_edt_reset_code"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:hint="RESET CODE"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/ask_for_reset_code_btn_enter"
+            android:text="CONFIRM"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/learnmore"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Jesuit Glossary"
+            android:textSize="22sp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Guide to understanding the documents"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Rome 1992"
+            android:textSize="22sp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Preface"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/jjguidepara1"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         <TextView
+             android:text="2.2.1992"
+             android:textColor="@color/black"
+             android:layout_margin="7dp"
+             android:textSize="16sp"
+             android:layout_gravity="left"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:text="W. Gramatowski S.I.\n Archivist"
+             style="@style/paragraphFooter"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content" />
+     </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

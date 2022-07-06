@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <com.google.android.material.appbar.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/zebrasagain">
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/main_home_toolbar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_scrollFlags="scroll|enterAlways"
+           android:background="@android:color/transparent"
+           android:elevation="6dp">
+           <ImageView
+               android:src="@drawable/logo"
+               android:layout_marginTop="5dp"
+               android:layout_width="40dp"
+               android:layout_height="40dp"/>
+           <TextView
+               android:paddingLeft="10dp"
+               android:textColor="@color/maroon"
+               android:text="Jesuits Eastern Africa"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </androidx.appcompat.widget.Toolbar>
+
+       <com.google.android.material.tabs.TabLayout
+           android:id="@+id/tabsHome"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:tabMode="scrollable"
+           app:tabGravity="fill"
+           android:background="@color/gray"
+           app:tabTextColor="@color/maroon"
+           android:elevation="6dp"
+           app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"/>
+   </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

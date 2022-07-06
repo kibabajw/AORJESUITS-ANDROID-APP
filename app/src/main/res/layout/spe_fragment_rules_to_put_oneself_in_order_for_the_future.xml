@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/spe_title_one"
+            android:text="RULES TO PUT ONESELF IN ORDER FOR THE FUTURE\nAS TO EATING"
+            style="@style/documentTitle"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content"
+            android:layout_below="@+id/spe_title_one"
+            android:text="@string/spe_rules_to_put_oneself_inorder_for_the_future_content"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_below="@+id/txt_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

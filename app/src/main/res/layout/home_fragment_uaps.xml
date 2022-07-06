@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/nile"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:alpha="0.7">
+
+            <com.codesgood.views.JustifiedTextView
+                android:text="@string/intro_to_uaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/fab_margin"
+                android:textStyle="normal"
+                android:layout_margin="10dp"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:background="@color/white"
+            android:alpha="0.7"
+            android:text="1) SHOWING THE WAY TO GOD"
+            android:fontFamily="@font/matescregular"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+        <ImageView
+            android:src="@drawable/waytogod"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:alpha="0.7">
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/uaps_one"
+           style="@style/paragraphBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="2) WALKING WITH THE EXCLUDED"
+            android:background="@color/white"
+            android:gravity="center"
+            android:alpha="0.7"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/matescregular"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+        <ImageView
+            android:src="@drawable/theexcluded"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:alpha="0.7">
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/uaps_two"
+            style="@style/paragraphBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="3) JOURNEYING WITH YOUTH"
+            android:background="@color/white"
+            android:gravity="center"
+            android:alpha="0.7"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/matescregular"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/theyouth"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:alpha="0.7">
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/uaps_three"
+            style="@style/paragraphBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="4) CARING FOR OUR COMMON HOME"
+            android:gravity="center"
+            android:background="@color/white"
+            android:alpha="0.7"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/matescregular"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/commonhome"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:alpha="0.7">
+        <com.codesgood.views.JustifiedTextView
+            android:text="@string/uaps_four"
+            style="@style/paragraphBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

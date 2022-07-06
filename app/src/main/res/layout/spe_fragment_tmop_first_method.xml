@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/spe_title_one"
+            android:text="THREE METHODS OF PRAYER\nAND FIRST ON THE COMMANDMENTS"
+            style="@style/documentTitle"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/spe_title_two"
+            android:layout_below="@+id/spe_title_one"
+            android:text="FIRST METHOD"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content"
+            android:layout_below="@+id/spe_title_two"
+            android:text="@string/spe_tmop_first_method_content"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_title2"
+            android:layout_below="@+id/txt_content"
+            android:text="I. The Ten Commandments"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content1"
+            android:layout_below="@+id/spe_title2"
+            android:text="@string/spe_tmop_first_method_content1"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_title3"
+            android:layout_below="@+id/txt_content1"
+            android:text="II. On Deadly Sins"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content2"
+            android:layout_below="@+id/spe_title3"
+            android:text="@string/spe_tmop_first_method_content2"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_title4"
+            android:layout_below="@+id/txt_content2"
+            android:text="III. On the Powers of the Soul"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content3"
+            android:layout_below="@+id/spe_title4"
+            android:text="@string/spe_tmop_first_method_content3"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/spe_title5"
+            android:layout_below="@+id/txt_content3"
+            android:text="IV. On the Bodily Senses"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/txt_content4"
+            android:layout_below="@+id/spe_title5"
+            android:text="@string/spe_tmop_first_method_content4"
+            style="@style/paragraphText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_below="@+id/txt_content4"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

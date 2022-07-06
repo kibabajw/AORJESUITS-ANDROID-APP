@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/doornlock1"
+    tools:context=".adusum.AdusumLoginActivity">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="FOR AOR JESUITS ONLY"
+            android:background="@color/white"
+            android:alpha="0.7"
+            android:fontFamily="@font/creteroundregular"
+            android:textSize="22sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/adusumLoginEditUsernameTextInputLayout"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextColor="@color/white"
+            app:hintTextColor="@color/white">
+            <EditText
+                android:id="@+id/adusumLoginEditUsername"
+                android:hint="Username"
+                android:textSize="18sp"
+                android:textColorHint="@color/white"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/adusumLoginEditPasswordTextInputLayout"
+            android:layout_below="@+id/adusumLoginEditUsernameTextInputLayout"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextColor="@color/white"
+            app:hintTextColor="@color/white">
+            <EditText
+                android:id="@+id/adusumLoginEditPassword"
+                android:hint="Password"
+                android:textSize="18sp"
+                android:textColorHint="@color/white"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/adusumLoginButton"
+            android:layout_below="@+id/adusumLoginEditPasswordTextInputLayout"
+            android:text="LOGIN"
+            android:textStyle="bold"
+            android:textColor="@color/maroon"
+            android:background="@color/gray"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/adusumlinkcreateaccount"
+                android:text="Create account"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/adusumlinkresetpassword"
+                android:text="Reset password"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
