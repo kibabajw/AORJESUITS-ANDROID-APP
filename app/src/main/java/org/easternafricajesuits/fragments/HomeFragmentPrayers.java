@@ -13,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -32,18 +33,35 @@ import java.util.Date;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import xyz.hasnat.sweettoast.SweetToast;
 
 public class HomeFragmentPrayers extends Fragment {
 
-    private static final String TAG = "RERE";
     private HomeFragmentPrayersBinding binding;
-
+    private Spinner spinnerPrayerMonth = null;
+    private Spinner spinnerPrayerDay = null;
     private String selectedDay = "";
     private String selectedMonth = "";
     private DateFormat currenDay;
     private DateFormat currentMonth;
 
     private Date date;
+
+    private String[] monthsarray = {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+    };
+
 
     public HomeFragmentPrayers() {
 
@@ -62,28 +80,31 @@ public class HomeFragmentPrayers extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        spinnerPrayerDay = binding.spinnerPrayerDay;
+        spinnerPrayerMonth = binding.spinnerPrayerMonth;
+
         // Deal with dates and months
         currenDay = new SimpleDateFormat("d");
         currentMonth = new SimpleDateFormat("MMMM");
         date = new Date();
 
         String thisDay = currenDay.format(date);
-        String thisMonth = currentMonth.format(date);
+        String thisMonth = currentMonth.format(date).toLowerCase();
 
 
         // Set up spinner for days
         ArrayAdapter<CharSequence> adapterDays = ArrayAdapter.createFromResource(getContext(), R.array.days, R.layout.support_simple_spinner_dropdown_item);
         adapterDays.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
-        binding.spinnerPrayerDay.setAdapter(adapterDays);
+        spinnerPrayerDay.setAdapter(adapterDays);
 
         for (int i = 0; i < adapterDays.getCount(); ++i) {
             if (String.valueOf(adapterDays.getItem(i)).equals(thisDay)) {
-                binding.spinnerPrayerDay.setSelection(i);
+                spinnerPrayerDay.setSelection(i);
                 selectedDay = String.valueOf(adapterDays.getItem(i));
             }
         }
 
-        binding.spinnerPrayerDay.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinnerPrayerDay.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedDay = String.valueOf(parent.getItemAtPosition(position));
@@ -100,16 +121,16 @@ public class HomeFragmentPrayers extends Fragment {
         // Set up spinner for month
         ArrayAdapter<CharSequence> adapterMonth = ArrayAdapter.createFromResource(getContext(), R.array.months_array, R.layout.support_simple_spinner_dropdown_item);
         adapterMonth.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
-        binding.spinnerPrayerMonth.setAdapter(adapterMonth);
+        spinnerPrayerMonth.setAdapter(adapterMonth);
 
         for (int j = 0; j < adapterMonth.getCount(); ++j) {
-            if (String.valueOf(adapterMonth.getItem(j)).equals(thisMonth)) {
-                binding.spinnerPrayerMonth.setSelection(j);
+            if (String.valueOf(adapterMonth.getItem(j)).toLowerCase().equals(thisMonth)) {
+                spinnerPrayerMonth.setSelection(j);
                 selectedMonth = String.valueOf(adapterMonth.getItem(j));
             }
         }
 
-        binding.spinnerPrayerMonth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinnerPrayerMonth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedMonth = String.valueOf(parent.getItemAtPosition(position));
@@ -127,7 +148,7 @@ public class HomeFragmentPrayers extends Fragment {
     }
 
     private void fetchprayer(String day, String month) {
-        Call<Thoughts> call = RetrofitClient.getInstance().getApi().getThoughts(day, month);
+        Call<Thoughts> call = RetrofitClient.getInstance().getApi().getThoughts(day, monthsarray[spinnerPrayerMonth.getSelectedItemPosition()]);
         call.enqueue(new Callback<Thoughts>() {
             @Override
             public void onResponse(Call<Thoughts> call, Response<Thoughts> response) {
@@ -140,7 +161,7 @@ public class HomeFragmentPrayers extends Fragment {
 
             @Override
             public void onFailure(Call<Thoughts> call, Throwable t) {
-//                Toast.makeText(getContext(), "An error occured", Toast.LENGTH_SHORT).show();
+                SweetToast.error(getContext(), "Could not fetch prayers", 3000);
             }
         });
     }

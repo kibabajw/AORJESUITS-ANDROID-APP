@@ -3,10 +3,14 @@ package org.easternafricajesuits.rest;
 import org.easternafricajesuits.adusum.model.AdusumDocuments;
 import org.easternafricajesuits.adusum.model.AdusumModel;
 import org.easternafricajesuits.adusum.model.AdusumServiceModel;
-import org.easternafricajesuits.adusum.model.Apostleship;
+import org.easternafricajesuits.adusum.necrology.NecrologyModel;
+import org.easternafricajesuits.summary.NewsSummaryReceivedModel;
+import org.easternafricajesuits.summary.PopesPrayerModel;
 import org.easternafricajesuits.adusum.model.AskcodeModel;
 import org.easternafricajesuits.adusum.model.AskcodeReceivedModel;
 import org.easternafricajesuits.adusum.model.CatalogueModel;
+import org.easternafricajesuits.adusum.model.DeleteAccountPayload;
+import org.easternafricajesuits.adusum.model.DeleteAccountResponse;
 import org.easternafricajesuits.adusum.model.ImageClass;
 import org.easternafricajesuits.adusum.model.NewPasswordModel;
 import org.easternafricajesuits.adusum.model.NewPasswordReceivedModel;
@@ -17,7 +21,10 @@ import org.easternafricajesuits.adusum.model.RequestPasswordResetReceived;
 import org.easternafricajesuits.adusum.model.UpdatemeModel;
 import org.easternafricajesuits.adusum.model.UserLoginModel;
 import org.easternafricajesuits.adusum.model.UserLoginReceived;
+import org.easternafricajesuits.adusum.shukran.ShukranModel;
+import org.easternafricajesuits.archivum.ArchivumModel;
 import org.easternafricajesuits.models.EventsreceivedModel;
+import org.easternafricajesuits.models.HeadersModel;
 import org.easternafricajesuits.models.LikeModel;
 import org.easternafricajesuits.models.NewsReceivedModel;
 import org.easternafricajesuits.models.OrderdonateModel;
@@ -27,7 +34,6 @@ import org.easternafricajesuits.models.Thoughts;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
@@ -61,16 +67,18 @@ public interface EndPoints {
     Call<NewPasswordReceivedModel> newPassword(@Body NewPasswordModel newPasswordModel);
 
     @GET("documents")
-    Call<AdusumDocuments> getDocuments();
+    Call<AdusumDocuments> getDocuments(@Query("documenttype") String documenttype);
 
     @GET("api/news")
     Call<NewsReceivedModel> getNews(@Query("nextID") int nextID);
 
     @GET("events/{month}/{year}")
     Call<EventsreceivedModel> getEvents(@Path("month") String month, @Path("year") String year);
+    @GET("fullmonthevents/{month}/{year}")
+    Call<EventsreceivedModel> getFullmonthevents(@Path("month") String month, @Path("year") String year);
 
-    @GET("apostleship/{month}/{year}")
-    Call<Apostleship> getApostleship(@Path("month") String month, @Path("year") String year);
+    @GET("popesprayerintention")
+    Call<PopesPrayerModel> getPopesprayerintention();
 
     @GET("like")
     Call<LikeModel> doLikeNews(@Query("newsid") String newsid, @Query("likeuserid") String likeuserid);
@@ -106,4 +114,28 @@ public interface EndPoints {
 
     @POST("neworderordonation")
     Call<OrderdonateModelReceived> neworderordonation(@Body OrderdonateModel newOrderdonate);
+
+    @GET("headers/{tag}")
+    Call<HeadersModel> getHeader(@Path("tag") String tag);
+
+
+    @POST("deleteaccountfromapp")
+    Call<DeleteAccountResponse> deletemyaccount(@Body DeleteAccountPayload deleteAccountPayload);
+
+    @GET("archivum/{offsetgiven}")
+    Call<ArchivumModel> getArchivum(@Path("offsetgiven") String offsetgiven);
+
+    @GET("shukran")
+    Call<ShukranModel> adusumGetShukrans();
+
+    @GET("api/news")
+    Call<NewsSummaryReceivedModel> getNewsSummary(@Query("nextID") int nextID);
+
+    // fetch Necrologies
+    @GET("necrologies")
+    Call<NecrologyModel> getNecrologies();
+
+    //    TODO --- Delete this
+    @GET("historical")
+    Call<HeadersModel> getHistorical();
 }

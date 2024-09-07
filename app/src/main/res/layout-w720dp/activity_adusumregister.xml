@@ -193,8 +193,8 @@
                 android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@color/white"
-                android:textColor="@color/green"
+                android:background="@drawable/bgcornermaroon"
+                android:textColor="@color/white"
                 android:padding="15dp"
                 android:textSize="19sp"/>
             <LinearLayout

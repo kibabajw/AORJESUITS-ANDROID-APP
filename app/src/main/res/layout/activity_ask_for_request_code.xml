@@ -25,12 +25,12 @@
         <EditText
             android:id="@+id/ask_for_reset_code_edt_reset_code"
             android:layout_width="250dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:inputType="number"
             android:gravity="center"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:hint="RESET CODE"
             android:layout_margin="10dp"/>

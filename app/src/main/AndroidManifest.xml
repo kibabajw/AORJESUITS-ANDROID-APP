@@ -9,10 +9,6 @@
         android:name="android.hardware.camera2"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -26,28 +22,81 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".merchandise.MerchandiseActivity"></activity>
+
         <activity
-            android:name=".adusum.ChooseNewPasswordActivity"
-            android:parentActivityName=".adusum.AdusumLoginActivity">
+            android:name=".adusum.NecrologyActivity"
+            android:parentActivityName=".adusum.AdusumAccountActivity"
+            android:label="NECROLOGY"
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".adusum.AdusumLoginActivity" />
+                android:value=".adusum.AdusumAccountActivity" />
         </activity>
-        <activity android:name=".adusum.AskforRequestCodeActivity" />
-        <activity android:name=".adusum.GetResetEmailActivity" />
-        <activity android:name=".adusum.constitution.ConstitutionActivity" />
-        <activity android:name=".adusum.catalogue.CatalogueActivity" />
-        <activity android:name=".thepilgrim.ThePilgrimActivity" />
-        <activity android:name=".jesuitjargon.JesuitJargonActivity" />
+
         <activity
-            android:name=".products.ProductsActivity"
+            android:name=".adusum.shukran.ShukranActivity"
+            android:exported="false"
+            android:label="Periodicals"
+            android:parentActivityName=".adusum.AdusumAccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".adusum.AdusumAccountActivity" />
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adusum.DeleteAccountActivity"
+            android:exported="false"
+            android:parentActivityName=".adusum.AdusumAccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".adusum.AdusumAccountActivity" />
+        </activity>
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:exported="false"
+            android:label="Privacy Policy"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.easternafricajesuits.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".SplashScreenActivity">
+        <activity
+            android:name=".OtherDocumentsActivity"
+            android:exported="false"
+            android:label="Others"
+            android:parentActivityName=".adusum.AdusumAccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".adusum.AdusumAccountActivity" />
+        </activity>
+        <activity
+            android:name=".FatherGeneralActivity"
+            android:exported="false"
+            android:label="Father General"
+            android:parentActivityName=".adusum.AdusumAccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".adusum.AdusumAccountActivity" />
+        </activity>
+        <activity
+            android:name=".FatherProvincialActivity"
+            android:exported="false"
+            android:label="Father Provincial"
+            android:parentActivityName=".adusum.AdusumAccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".adusum.AdusumAccountActivity" />
+        </activity>
+
+        <service
+            android:name=".news.NewsService"
+            android:exported="false" />
+
+        <activity
+            android:name=".summary.SummaryActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -55,17 +104,61 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".merchandise.MerchandiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adusum.ChooseNewPasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".adusum.AdusumLoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".adusum.AdusumLoginActivity" />
+        </activity>
+        <activity
+            android:name=".adusum.AskforRequestCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adusum.GetResetEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adusum.constitution.ConstitutionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adusum.catalogue.CatalogueActivity"
+            android:exported="false"
+            android:label="AOR Catalogues"
+            android:parentActivityName=".adusum.AdusumAccountActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".adusum.AdusumAccountActivity" />
+        </activity>
+        <activity
+            android:name=".thepilgrim.ThePilgrimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".jesuitjargon.JesuitJargonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true" />
+        <activity
             android:name=".FullscreenImageActivity"
-            android:parentActivityName=".MainActivity">
+            android:exported="false" />
+        <activity
+            android:name=".spiritualexercises.SpiritualExercisesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adusum.AdusumLoginActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".prayerrequest.PrayerRequestActivity" />
-        <activity android:name=".spiritualexercises.SpiritualExercisesActivity" />
-        <activity android:name=".adusum.AdusumLoginActivity" />
         <activity
             android:name=".adusum.AdusumSettingsActivity"
+            android:exported="false"
             android:parentActivityName=".adusum.AdusumAccountActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <meta-data
@@ -74,15 +167,21 @@
         </activity>
         <activity
             android:name=".adusum.AdusumAccountActivity"
+            android:exported="false"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.easternafricajesuits.MainActivity" />
         </activity>
-        <activity android:name=".adusum.ProbationActivity" />
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".adusum.ProbationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
         <activity
             android:name=".adusum.AdusumregisterActivity"
+            android:exported="false"
             android:label="@string/title_activity_adusumregister"
             android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

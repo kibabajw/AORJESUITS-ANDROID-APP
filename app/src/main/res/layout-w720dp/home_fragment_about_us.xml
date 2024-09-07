@@ -15,12 +15,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView"
                 android:scaleType="fitXY"
-                android:src="@drawable/aboutus"
+                android:src="@drawable/thejesuits"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="540dp"/>
+                android:layout_height="410dp"/>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -75,12 +76,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView"
                 android:src="@drawable/eastafrica"
                 android:scaleType="fitXY"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="540dp"/>
+                android:layout_height="410dp"/>
         </LinearLayout>
 
 

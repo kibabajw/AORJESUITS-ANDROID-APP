@@ -1,20 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ASMSmaliIdeaPluginConfiguration">
+    <asm skipDebug="true" skipFrames="true" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/custom_input.xml" value="0.218" />
+        <entry key="app/src/main/res/drawable/ic_event_white.xml" value="0.136" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.136" />
+        <entry key="app/src/main/res/drawable/ic_news.xml" value="0.1995" />
+        <entry key="app/src/main/res/drawable/rounded_corners.xml" value="0.136" />
+        <entry key="app/src/main/res/drawable/setupdialogbackground.xml" value="0.197" />
         <entry key="app/src/main/res/layout-w720dp/home_fragment_about_us.xml" value="0.1" />
         <entry key="app/src/main/res/layout-w720dp/home_fragment_daily_examen.xml" value="0.1" />
         <entry key="app/src/main/res/layout-w720dp/home_fragment_joinus.xml" value="0.14337641357027464" />
         <entry key="app/src/main/res/layout-w720dp/home_fragment_uaps.xml" value="0.15652557319223986" />
+        <entry key="app/src/main/res/layout/activity_adusum_account.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_adusum_login.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_adusum_settings.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/activity_adusumregister.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_ask_for_request_code.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_catalogue.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/activity_choose_new_password.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/activity_father_general.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_father_provincial.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/activity_fullscreen_image.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_get_reset_email.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_jesuit_jargon.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15896739130434784" />
+        <entry key="app/src/main/res/layout/activity_other_documents.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_privacy_policy.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_summary.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_the_pilgrim.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/adusum_list_brother.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/adusum_user_info_recycler_item.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/constitution_list_item.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/events_frag_recycler_item.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/fragment_historical.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/fragment_privacy_policy.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/home_fragment_about_us.xml" value="0.1828125" />
         <entry key="app/src/main/res/layout/home_fragment_daily_examen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/home_fragment_events.xml" value="0.15896739130434784" />
         <entry key="app/src/main/res/layout/home_fragment_joinus.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/home_fragment_news.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/home_fragment_prayers.xml" value="0.11008426202772492" />
         <entry key="app/src/main/res/layout/home_fragment_uaps.xml" value="0.13360933383515242" />
+        <entry key="app/src/main/res/layout/item_progress.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/listdocumenttypesadusum.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/listitemnews.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/news_frag_recycler_item.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/setupdialogitem.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/documents_context_menu.xml" value="0.2109375" />
+        <entry key="app/src/main/res/menu/home_menu.xml" value="0.2109375" />
+        <entry key="app/src/main/res/menu/menu_for_bottom_nav_ac_main.xml" value="0.5075187969924813" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

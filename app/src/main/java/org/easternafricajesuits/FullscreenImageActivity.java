@@ -116,8 +116,8 @@ public class FullscreenImageActivity extends AppCompatActivity implements Gestur
 
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-        Intent backIntent = new Intent(this, MainActivity.class);
-        startActivity(backIntent);
+//        Intent backIntent = new Intent(this, MainActivity.class);
+//        startActivity(backIntent);
         finish();
         return true;
     }

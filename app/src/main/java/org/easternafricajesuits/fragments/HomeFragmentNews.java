@@ -17,13 +17,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -32,7 +34,6 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.snackbar.Snackbar;
 
@@ -42,18 +43,20 @@ import org.easternafricajesuits.clients.RetrofitClient;
 import org.easternafricajesuits.databinding.HomeFragmentNewsBinding;
 import org.easternafricajesuits.models.NewsModel;
 import org.easternafricajesuits.models.NewsReceivedModel;
-import org.easternafricajesuits.rest.EndPoints;
 import org.easternafricajesuits.utils.Client;
 import org.easternafricajesuits.utils.NetworkChangeListener;
 import org.easternafricajesuits.utils.PaginationScrollListener;
-import org.easternafricajesuits.utils.Service;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import xyz.hasnat.sweettoast.SweetToast;
 
 public class HomeFragmentNews extends Fragment {
 
@@ -64,7 +67,8 @@ public class HomeFragmentNews extends Fragment {
     private RecyclerView newsRecyclerView;
     private RecyclerView.Adapter newsAdapter;
     private List<NewsModel> newsModel = new ArrayList<>();
-    private CoordinatorLayout scrollView;
+//    private CoordinatorLayout scrollView;
+    private ConstraintLayout scrollView;
 
     // start
     NewsAdapter adapter;
@@ -81,6 +85,13 @@ public class HomeFragmentNews extends Fragment {
 
     // end
     private Context context;
+
+    private DateFormat currentDay;
+    private Date date;
+    private DateFormat currentYear;
+
+    private LinearLayout NewsPageFooter;
+    private Button buttonLoadMoreNews;
     public HomeFragmentNews() {
 
     }
@@ -98,7 +109,10 @@ public class HomeFragmentNews extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        scrollView = binding.homefragnewsRootLayout;
+        NewsPageFooter = binding.newsPageFooter;
+        buttonLoadMoreNews = binding.btnNewsShowMore;
+
+        scrollView = (ConstraintLayout) binding.homefragnewsRootLayout;
         newsRecyclerView = binding.homeFragNewsRecyclerView;
         // start ----------
 
@@ -109,7 +123,7 @@ public class HomeFragmentNews extends Fragment {
         rv.setLayoutManager(linearLayoutManager);
         rv.setItemAnimator(new DefaultItemAnimator());
         rv.setAdapter(adapter);
-        rv.setHasFixedSize(true);
+        rv.setHasFixedSize(false);
 
         rv.addOnScrollListener(new PaginationScrollListener(linearLayoutManager) {
             @Override
@@ -122,9 +136,19 @@ public class HomeFragmentNews extends Fragment {
                     @Override
                     public void run() {
                         if (checkNetwork() == true) {
-                            loadNextPage(adapter.getItemCount());
+//                            loadNextPage(adapter.getItemCount());
+                            progressBar.setVisibility(View.GONE);
+                            NewsPageFooter.setVisibility(View.VISIBLE);
+
+                            buttonLoadMoreNews.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    loadNextPage(adapter.getItemCount());
+                                    NewsPageFooter.setVisibility(View.GONE);
+                                }
+                            });
                         } else {
-                            Toast.makeText(getContext(), "You seem to be offline", Toast.LENGTH_LONG).show();
+                            SweetToast.error(getContext(), "You seem to be offline", 3000);
                         }
                     }
                 }, 500);
@@ -151,8 +175,15 @@ public class HomeFragmentNews extends Fragment {
             loadFirstPage(0);
 //            askforpermission();
         } else {
-            Toast.makeText(getContext(), "You seem to be offline", Toast.LENGTH_LONG).show();
+            SweetToast.warning(getContext(), getString(R.string.offline_msg), 4000);
         }
+
+
+        currentYear = new SimpleDateFormat("yyyy");
+        date = new Date();
+        String thisYear = currentYear.format(date).toUpperCase();
+
+        binding.newsPageFooterTextview.append(thisYear);
     }
 
     private void loadFirstPage(int firstID) {
@@ -166,7 +197,7 @@ public class HomeFragmentNews extends Fragment {
                     adapter.addAll(results);
 
                     if (currentPage <= TOTAL_PAGES) {
-                        adapter.addLoadingFooter();
+                        //adapter.addLoadingFooter();
                     } else {
                         isLastPage = true;
                     }
@@ -175,6 +206,8 @@ public class HomeFragmentNews extends Fragment {
 
             @Override
             public void onFailure(Call<NewsReceivedModel> call, Throwable t) {
+                SweetToast.error(getContext(), "Could not fetch News items", 3000);
+//                Log.e("CHEKI", t.getMessage());
             }
         });
     }
@@ -196,21 +229,25 @@ public class HomeFragmentNews extends Fragment {
                     }
 
                     if (currentPage != TOTAL_PAGES) {
-                        adapter.addLoadingFooter();
+                        //adapter.addLoadingFooter();
                     } else {
                         isLastPage = true;
                     }
+
+                    SweetToast.info(getContext(), "Items fetched, scroll down", 4000);
                 }
             }
 
             @Override
             public void onFailure(Call<NewsReceivedModel> call, Throwable t) {
+                SweetToast.error(getContext(), "Could not fetch News items", 3000);
             }
         });
     }
 
     private List<NewsModel> fetchResults(Response<NewsReceivedModel> response) {
         NewsReceivedModel receivedModel = response.body();
+
         return receivedModel.getNewsModel();
     }
 
@@ -286,6 +323,7 @@ public class HomeFragmentNews extends Fragment {
 
             @Override
             public void onFailure(Call<NewsReceivedModel> call, Throwable t) {
+                SweetToast.error(getContext(), "Could not fetch News items", 3000);
             }
         });
 
@@ -307,7 +345,7 @@ public class HomeFragmentNews extends Fragment {
                     NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
                     notificationManagerCompat.notify(0, notification);
                 } else {
-                        Snackbar.make(scrollView, "You seem to be offline", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(scrollView, R.string.offline_msg, Snackbar.LENGTH_LONG).show();
                 }
             } else {
 //                loadtheNews();
@@ -318,6 +356,7 @@ public class HomeFragmentNews extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+
         IntentFilter filter = new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE");
         getActivity().registerReceiver(mReceiver, filter);
 

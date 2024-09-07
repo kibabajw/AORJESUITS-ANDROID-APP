@@ -1316,54 +1316,55 @@ and went back by another way to their country.”\n
     </string>
 
     <string name="contact_ethiopia">
-        <p>Addis Ababa</p>\n
+        <p>Notre Dame Jesuit Residence</p>\n
+        <p>Gulele 02, House 607</p>\n
         <p>P.O. Box 30105</p>\n
-        <p>Addis Ababa</p>\n
-        <p>+251 978 686 966</p>\n
-        <p>jesuitvocations.ethiopia@gmail.com</p>
+        <p>Addis Ababa, Ethiopia</p>\n
+        <p>(+251)941 752 190</p>\n
+        <p>vocationsethiopia@aorjesuits.org</p>
     </string>
 
     <string name="contact_kenya">
-        <p>Loyola House</p>\n
-        <p>P.O. Box 21399,00505</p>\n
-        <p>Ngong’ Road</p>\n
-        <p>+254 726 210 035/734 707 040</p>\n
-        <p>jesuitvocations.ken@gmail.com</p>
+        <p>LOYOLA HOUSE,Ngong Road</p>\n
+        <p>NAIROBI</p>\n
+        <p>(+254) 734 707 040</p>\n
+        <p>(+254) 726 210 095</p>\n
+        <p>vocations@aorjesuits.org</p>
     </string>
 
     <string name="contact_south_sudan">
-        <p>Loyola Secondary School</p>\n
-        <p>P.O. Box 2</p>\n
-        <p>Jebel Kher, Wau</p>\n
-        <p>+211 920 549 656</p>\n
-        <p>jesuitvocationsross@gmail.com</p>
+        <p>IGNATIUS HOUSE JEBER KHEL WALI</p>\n
+        <p>(+211) 923 768 174</p>\n
+        <p>vocationsross@aorjesuits.org</p>
     </string>
 
     <string name="contact_sudan">
-        <p>Loyola House</p>\n
-        <p>P.O. Box 21399,00505</p>\n
-        <p>Ngong’ Road</p>\n
-        <p>+254 726 210 035/734 707 040</p>\n
-        <p>jesuitvocations.ken@gmail.com</p>
+        <p>LOYOLA HOUSE,Ngong Road</p>\n
+        <p>NAIROBI</p>\n
+        <p>(+254) 734 707 040</p>\n
+        <p>(+254) 726 210 095</p>\n
+        <p>vocations@aorjesuits.org</p>
     </string>
 
     <string name="contact_tanzania">
-        <p>Airport Parish</p>\n
-        <p>P.O. Box 1079</p>\n
-        <p>Dodoma</p>\n
-        <p>+255 684 621 551</p>\n
-        <p>jesuitvocationstz@gmail.com</p>
+        <p>MATTEO RICCI, JESUIT RESIDENCE MOSHI</p>\n
+        <p>(+255) 686 074 251</p>\n
+        <p>miitotanzania@aorjesuits.org</p>
     </string>
 
     <string name="contact_uganda">
         <p>Xavier House</p>\n
         <p>P.O. Box 7300</p>\n
-        <p>Kampala</p>\n
-        <p>jesuitvocations.uganda@gmail.com</p>
+        <p>Kampala, Uganda</p>\n
+        <p>(+256) 414 510340</p>\n
+        <p>(+256)702 805 893</p>\n
+        <p>vocationsug@aorjesuits.org</p>
     </string>
 
-    <string name="the_jesuits">Jesuits are men who belong to a Roman Catholic religious order called the Society of Jesus, established in 1540 by St. Ignatius of Loyola. It is the largest Catholic religious order in the world with over 18, 500 members. We serve in 127 nations on 6 continents and are organized into administrative regions called Provinces. The Society of Jesus is involved in a number of ministries including schools and universities, retreat centres, social justice, research agencies, refugee work and media institutions. Our norm is to find where God will best be served and where people will best be helped. As we say, “we find God in all things.”</string>
-    <string name="the_jesuits_eastern_africa">The Eastern Africa Province was formed in 1986 and consists of 210 Jesuits from Ethiopia, Kenya, Tanzania, Sudan, South Sudan and Uganda. True to our missionary vocation, many of us work in Eastern Africa, while others are studying or working in Zimbabwe, West Africa, Italy, India, the United States, Great Britain, Philippines and elsewhere in the world.</string>
+    <string name="the_jesuits">Jesuits are men who belong to a Roman Catholic religious order called the Society of Jesus, established in 1540 by St. Ignatius of Loyola. It is the largest Catholic religious order in the world with over 18, 500 members. We serve in 127 nations on 6 continents and are organized into administrative regions called Provinces.\n\n The Society of Jesus is involved in a number of ministries including schools and universities, retreat centres, social justice, research agencies, refugee work and media institutions. Our norm is to find where God will best be served and where people will best be helped. As we say, “we find God in all things.”</string>
+
+    <string name="the_jesuits_eastern_africa">The Eastern Africa Province was formed in 1986 and consists of 210 Jesuits from Ethiopia, Kenya, Tanzania, Sudan, South Sudan and Uganda.\n\n True to our missionary vocation, many of us work in Eastern Africa, while others are studying or working in Zimbabwe, West Africa, Italy, India, the United States, Great Britain, Philippines and elsewhere in the world.</string>
+
     <string name="daily_examen">The Daily Examen is a prayer technique developed by St. Ignatius to help us reflect on the events of the day to discern God\'s presence and direction. When Ignatius founded the society of Jesus, he required the Jesuits to practice the Examen twice daily-at noon and at the end of the day. It\'s a habit that Jesuits, and many other Christians, practice to this day.</string>
     <string name="examen_one">God, I believe that at this moment I am in your presence and you are loving me.</string>
     <string name="examen_two">God, you know my needs better than I know them. Give me your light and your help to see how you have been with me, both yesterday and today.</string>
@@ -5937,13 +5938,13 @@ Congregazione Mariana studiata nei documenti (Roma, 1911).</p>\n
     </string>
 
     <string name="intro_to_uaps">
-        The Universal Apostolic Preferences are the fruit of a process of discernment lasting almost two years.
-        All Jesuits were invited to take part and in addition our mission partners. \n
-        The Preferences give a horizon, a point of reference to the whole Society of Jesus.
-        They capture our imaginations and awaken our desires. They unite us in our mission.
-        The new Preferences are four areas vital for our world today.
+        <p>The Universal Apostolic Preferences are the fruit of a process of discernment lasting almost two years.
+            All Jesuits were invited to take part and in addition our mission partners.</p> \n
+        <p>The Preferences give a horizon, a point of reference to the whole Society of Jesus.
+        They capture our imaginations and awaken our desires. They unite us in our mission.</p>\n
+        <p>The new Preferences are four areas vital for our world today.
         The Society of Jesus will pay special attention to them in the next ten years.
-        We invite you to learn more and take action with us! We want to make a Gospel difference.\n
+        We invite you to learn more and take action with us! We want to make a Gospel difference.</p>\n
     </string>
 
     <string name="str_cons_foreword">
@@ -28924,4 +28925,78 @@ Congregazione Mariana studiata nei documenti (Roma, 1911).</p>\n
         <b>Euro Account: 651 749 0034</b>\n
         <b>Kenya Shillings Account: 651 749 0013</b>\n
     </string>
+
+    <string name="how_the_app_accesses_user_data">
+        The SJAOR App accesses user data in a consensual manner whereby a user enters his required personal information in a form during registration. User data is uploaded by the user willinglly, the app does not collect anyother data from the user or device other than the required data during registration of the user and once the user is logged in the app.\n\n
+    </string>
+
+    <string name="how_the_app_collects_user_data">
+        The user enters the following information in a form during registration: Username, Full name as appears in Catalogue, Date of birth, SJ Date of entry, Current provincial, Current community and a password.\n
+        After a user has successfully registered, he will await confirmatiom of his account and once the account is verified and confirmed, he will be able to log-in using the registered Username and the registered password.\n
+        Once the user has logged in the restricted area of the app(AD USUM), he will be able to upload his image through the app.\n
+        The data collected from the user is send to the server for storage in a database.\n
+    </string>
+
+    <string name="How_collected_data_is_used">
+        The data collected during registration is used by the society(Eastern Africa Jesuits) to confirm that the user is indeed a member of the Eastern Africa Jesuits society.\n
+    </string>
+
+    <string name="Does_the_app_share_user_data">
+         The data collected from the user is not shared with anyother party, the data is personal confidential information of Eastern Africa Jesuits and therefore only previledged to the society(Eastern Africa Jesuits) itself.\n
+    </string>
+
+    <string name="Security_of_data">
+        Data is transmitted to the server through a secured https connection to ensure bad actors do not access the data during transmission.\n
+    </string>
+
+    <string name="data_retention_policy">
+        The user data collected is not deleted, this is because the users using the restricted area of the app(AD USUM) are members of the society(Eastern Africa Jesuits) who are the owner of the app and its accompanying systems(the backend server application and web portal).\n
+    </string>
+
+    <string name="developer_info">
+        For any further queries about the SJAOR or about the society, please reach us through info@aorjesuits.org\n
+        You can also visit http://easternafricajesuits.org/ our website for further information about us. \n
+    </string>
+
+
+    <string name="historical_paragraphs">
+        <p>A young Spanish Jesuit is missioned to Japan, where he experiences events that will affect the rest of his life.</p>\n\n
+
+        <p>The animated short film “Arrupe in Japan” is a collaboration between the Jesuit Conference of Asia Pacific, the Digital Arts and Computer Animation Department of the Ateneo de Naga University in Naga, Philippines, and Elisabeth University of Music in Hiroshima, Japan. It takes a look at the early years of Fr Pedro Arrupe SJ, former Jesuit Superior General, when he was a young man in pre-World War II Japan. In 1945, when he was the Master of Novices in Nagatsuka, a mere six kilometres outside of Hiroshima, he experienced the onslaught of the atomic bomb dropped by an American warplane over the city. With his medical knowledge, Fr Arrupe helped victims who flocked to their house. One young man whose wounds were treated by Fr Arrupe would survive his injuries and later become a priest himself.</p>\n\n
+
+        <p>Today, 78 years after the bombing of Hiroshima, Fr Arrupe’s light shines ever brighter. His words about being men and women for others still resonate five decades after he shared them in Valencia, Spain, when he addressed a gathering of Jesuit alumni. Fr Arrupe was certainly himself a man for others—not only in Japan, where he was side by side with the Japanese people during one of the most difficult moments of history—but also throughout his entire life.</p>\n\n
+
+        <p>The cause for Fr Pedro Arrupe’s beatification and canonization was opened in February 2019.</p>\n\n
+
+        <p>Watch the film:</p>
+    </string>
+    <string name="offline_msg">You seem to be offline</string>
+    <string name="sorry_an_error_occured">Sorry, an error occured</string>
+    <string name="no_events_for_selected_date">No events for selected date</string>
+
+    <string name="read_less">show less</string>
+    <string name="read_more">show more</string>
+    <string name="press_back_again_to_exit">Press back again to exit</string>
+
+    <string name="news">News</string>
+    <string name="about_us">About us</string>
+    <string name="events">Events</string>
+    <string name="historical">Archivum</string>
+    <string name="prayers">Prayers</string>
+    <string name="join_us">Join us</string>
+    <string name="daily_examen_title">Daily Examen</string>
+
+    <string name="spiritual_exercises">Spiritual Exercises</string>
+    <string name="jesuit_jargon">Jesuit Jargon</string>
+    <string name="the_pilgrim">The pilgrim</string>
+    <string name="support_us">Support us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="events_for_the_month">Events for the month</string>
+
+    <string name="prominentdiscloreparagraph" translatable="false">
+        <p>SJAOR app collects user\'s image to enable our organization to verify that the user is not a robot and that a user is one of us.</p>\n\n
+        <p>The user image is uploaded willingly by the user, the app does not automatically collect your images.</p>
+    </string>
+
+
 </resources>

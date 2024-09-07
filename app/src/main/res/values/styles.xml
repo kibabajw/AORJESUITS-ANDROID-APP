@@ -120,4 +120,26 @@
         <item name="android:padding">2dp</item>
     </style>
 
+    <style name="privacypolicypara">
+        <item name="android:lineSpacingExtra">@dimen/fab_margin</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="signup_input_style">
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/custom_input</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">@dimen/signup_input_width</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">@color/register_input_color_hint</item>
+    </style>
+
+    <style name="AppTheme">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
 </resources>

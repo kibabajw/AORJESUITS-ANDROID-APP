@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sudandesert"
+    android:background="@color/white"
     tools:context=".adusum.AdusumregisterActivity">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -33,168 +33,165 @@
             android:gravity="center" />
 
         <com.google.android.material.textfield.TextInputLayout
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
             android:id="@+id/inputLayoutemail"
-            app:hintTextColor="@color/white"
-            app:errorTextColor="@color/white"
+            app:hintTextColor="@color/black"
+            app:errorTextColor="@color/red"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
                 android:id="@+id/edit_adusum_register_email"
                 android:hint="Email address"
-                android:textSize="18sp"
-                android:textColorHint="@color/register_input_color_hint"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/black"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                style="@style/signup_input_style"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
             android:id="@+id/inputLayoutusername"
-            app:hintTextColor="@color/white"
-            app:errorTextColor="@color/white"
+            app:hintTextColor="@color/black"
+            app:errorTextColor="@color/red"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
                 android:id="@+id/edit_adusum_register_username"
                 android:hint="Username"
-                android:textSize="18sp"
-                android:textColorHint="@color/register_input_color_hint"
                 android:inputType="textPersonName"
-                android:textColor="@color/black"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                style="@style/signup_input_style"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
             android:id="@+id/inputLayoutFullname"
             android:layout_marginTop="20dp"
-            app:hintTextColor="@color/white"
-            app:errorTextColor="@color/white"
+            app:hintTextColor="@color/black"
+            app:errorTextColor="@color/red"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
                 android:id="@+id/edit_adusum_register_fullname"
                 android:layout_below="@+id/edit_adusum_register_username"
                 android:hint="Fullname as appears in catalogue"
-                android:textColorHint="@color/register_input_color_hint"
-                android:textColor="@color/black"
                 android:inputType="textPersonName"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                style="@style/signup_input_style" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
             android:id="@+id/inputLayoutDateofbirth"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            app:hintTextColor="@color/white"
-            app:errorTextColor="@color/white"
+            app:hintTextColor="@color/black"
+            app:errorTextColor="@color/red"
             android:layout_height="wrap_content">
             <EditText
                 android:id="@+id/edit_adusum_register_date_of_birth"
                 android:hint="Date of birth"
                 android:layout_below="@+id/edit_adusum_register_fullname"
-                android:textColorHint="@color/register_input_color_hint"
-                android:textColor="@color/black"
                 android:inputType="date"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                style="@style/signup_input_style"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
             android:id="@+id/inputLayoutDateofentry"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            app:hintTextColor="@color/white"
-            app:errorTextColor="@color/white"
+            app:hintTextColor="@color/black"
+            app:errorTextColor="@color/red"
             android:layout_height="wrap_content">
             <EditText
                 android:id="@+id/edit_adusum_register_date_of_entry"
                 android:layout_below="@+id/edit_adusum_register_date_of_birth"
                 android:hint="In SJ Date of entry"
-                android:textColorHint="@color/register_input_color_hint"
-                android:textColor="@color/black"
                 android:inputType="date"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                style="@style/signup_input_style"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
             android:id="@+id/inputLayoutNameofyourprovincial"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:errorTextColor="@color/white"
-            app:hintTextColor="@color/white">
+            app:errorTextColor="@color/red"
+            app:hintTextColor="@color/black">
             <EditText
                 android:id="@+id/edit_adusum_register_name_of_provincial"
                 android:hint="Current provincial"
-                android:textSize="18sp"
-                android:textColorHint="@color/register_input_color_hint"
                 android:inputType="text"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/black"/>
+                style="@style/signup_input_style"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
             android:id="@+id/inputLayoutCurrentcommunity"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:errorTextColor="@color/white"
-            app:hintTextColor="@color/white">
+            app:errorTextColor="@color/red"
+            app:hintTextColor="@color/black">
             <EditText
                 android:id="@+id/edit_adusum_register_current_community"
                 android:layout_below="@+id/edit_adusum_register_name_of_provincial"
                 android:hint="Current community"
-                android:textColorHint="@color/register_input_color_hint"
                 android:inputType="text"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/black"/>
+                style="@style/signup_input_style"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
             android:id="@+id/inputLayoutPassword"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:errorTextColor="@color/white"
-            app:hintTextColor="@color/white">
+            app:errorTextColor="@color/red"
+            app:hintTextColor="@color/black">
             <EditText
                 android:id="@+id/edit_adusum_register_password"
                 android:hint="Password"
                 android:layout_below="@+id/edit_adusum_register_current_community"
-                android:textColorHint="@color/register_input_color_hint"
                 android:inputType="textPassword"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/black"/>
+                style="@style/signup_input_style"/>
         </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:id="@+id/btn_adusum_register_enter"
             android:text="ENTER"
             android:gravity="center"
-            android:layout_width="280dp"
+            android:layout_width="@dimen/signup_input_width"
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@color/white"
-            android:textColor="@color/green"
+            android:background="@drawable/bgcornermaroon"
+            android:textColor="@color/white"
             android:padding="15dp"
             android:textSize="19sp"/>
        <LinearLayout
@@ -204,7 +201,7 @@
            <TextView
                android:id="@+id/adusumlinklogin"
                android:layout_marginTop="10dp"
-               android:textColor="@color/white"
+               android:textColor="@color/black"
                android:fontFamily="@font/robotomedium"
                android:text="Login"
                android:gravity="left"
@@ -215,7 +212,7 @@
            <TextView
                android:id="@+id/adusumResetPasswordlink"
                android:layout_marginTop="10dp"
-               android:textColor="@color/white"
+               android:textColor="@color/black"
                android:fontFamily="@font/robotomedium"
                android:text="Reset password"
                android:gravity="right"

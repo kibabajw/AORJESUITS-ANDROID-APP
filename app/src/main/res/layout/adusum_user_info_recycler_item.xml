@@ -4,6 +4,45 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linearlayout_click_to_hide_show_user_data"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <ImageView
+            android:src="@drawable/avatar"
+            android:layout_gravity="center_vertical"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="Personal details"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/img_button_toggle_user_data"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_arrow_down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_wrap_user_data"
+        android:padding="2.5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
     <View
         android:layout_width="match_parent"
         android:layout_height="0.8dp"
@@ -144,4 +183,5 @@
         android:layout_marginTop="2dp"
         android:layout_marginBottom="2dp"
         android:background="?android:attr/listDivider"/>
+    </LinearLayout>
 </LinearLayout>

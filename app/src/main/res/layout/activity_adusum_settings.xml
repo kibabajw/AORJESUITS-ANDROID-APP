@@ -1,38 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="@color/white"
     tools:context=".adusum.AdusumSettingsActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarAccountSettings"
         android:layout_width="match_parent"
-        android:background="@color/maroon"
-        app:titleTextColor="@color/white"
+        android:background="@color/white"
+        app:titleTextColor="@color/black"
+        app:title="Settings"
+        android:elevation="6dp"
         android:layout_height="?attr/actionBarSize"/>
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/toolbarAccountSettings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
     <LinearLayout
-        android:layout_centerInParent="true"
-        android:layout_marginTop="100dp"
-        android:layout_width="300dp"
+        android:id="@+id/linear_for_user_data"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/adusum_list_title_username"
+            android:text="Username"
+            android:textColor="#888"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_info_username"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#eeeeee"/>
+        <TextView
+            android:id="@+id/adusum_list_title_fullname"
+            android:text="Fullname"
+            android:fontFamily="@font/opensansregular"
+            android:textColor="#888"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_info_fullname"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#eeeeee"/>
+
+        <TextView
+            android:id="@+id/adusum_list_title_email"
+            android:text="Email"
+            android:fontFamily="@font/opensansregular"
+            android:textColor="#888"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_info_email"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#eeeeee"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linear_for_user_data"
+        android:padding="15dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <TextView
+            android:text="Change username or Password"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/settingsusernameTextInputLayout"
             android:layout_below="@+id/adusumLoginEditUsernameTextInputLayout"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:errorTextColor="@color/maroon"
-            app:hintTextColor="@color/maroon">
+            app:hintTextColor="@color/black">
         <EditText
             android:hint="username"
             android:textSize="22sp"
-            android:fontFamily="@font/robotomedium"
             android:textColorHint="@color/register_input_color_hint"
             android:inputType="textPersonName"
             android:textColor="@color/black"
@@ -47,15 +137,14 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/settingspasswordTextInputLayout"
             android:layout_below="@+id/adusumLoginEditUsernameTextInputLayout"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:errorTextColor="@color/maroon"
-            app:hintTextColor="@color/maroon">
+            app:hintTextColor="@color/black">
         <EditText
             android:hint="password"
             android:textSize="22sp"
-            android:fontFamily="@font/robotomedium"
             android:textColorHint="@color/register_input_color_hint"
             android:inputType="text"
             android:textColor="@color/black"
@@ -65,7 +154,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
-
+        <Button
+            android:id="@+id/button_settings_submit"
+            android:text="SUBMIT"
+            android:textSize="19sp"
+            android:elevation="6dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:background="@color/maroon"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
     </LinearLayout>
+        </LinearLayout>
 
+    </androidx.core.widget.NestedScrollView>
 </RelativeLayout>

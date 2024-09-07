@@ -14,22 +14,22 @@ public class NewsModel {
     private String newsBody;
     @SerializedName("likes")
     private String newsLikes;
-    @SerializedName("created_at")
+    @SerializedName("author")
+    private String author;
+    @SerializedName("added_on")
     private String newsCreatedAt;
-    @SerializedName("updated_at")
-    private String newsUpdatedAt;
 
     public NewsModel() {
 
     }
 
-    public NewsModel(String newsId, String newsTitle, String newsImage, String newsBody, String newsCreatedAt, String newsUpdatedAt) {
+    public NewsModel(String newsId, String newsTitle, String newsImage, String newsBody, String author, String newsCreatedAt) {
         this.newsId = newsId;
         this.newsTitle = newsTitle;
         this.newsImage = newsImage;
         this.newsBody = newsBody;
+        this.author = author;
         this.newsCreatedAt = newsCreatedAt;
-        this.newsUpdatedAt = newsUpdatedAt;
     }
 
 
@@ -73,6 +73,13 @@ public class NewsModel {
         this.newsLikes = newsLikes;
     }
 
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+    public String getAuthor() {
+        return author;
+    }
+
     public String getNewsCreatedAt() {
         return newsCreatedAt;
     }
@@ -81,13 +88,7 @@ public class NewsModel {
         this.newsCreatedAt = newsCreatedAt;
     }
 
-    public String getNewsUpdatedAt() {
-        return newsUpdatedAt;
-    }
 
-    public void setNewsUpdatedAt(String newsUpdatedAt) {
-        this.newsUpdatedAt = newsUpdatedAt;
-    }
 
 
 }

@@ -22,13 +22,25 @@ public class EventsModel {
     @SerializedName("event_time")
     private String eventTime;
 
-    public EventsModel(String eventName, String eventLocation, String eventDay, String eventMonth, String eventYear, String eventTime) {
+    @SerializedName("event_image")
+    private String eventImage;
+
+    @SerializedName("event_type")
+    private String eventType;
+
+    @SerializedName("event_description")
+    private String eventDescription;
+
+    public EventsModel(String eventName, String eventLocation, String eventDay, String eventMonth, String eventYear, String eventTime, String eventImage, String eventType, String eventDescription) {
         this.eventName = eventName;
         this.eventLocation = eventLocation;
         this.eventDay = eventDay;
         this.eventMonth = eventMonth;
         this.eventYear = eventYear;
         this.eventTime = eventTime;
+        this.eventImage = eventImage;
+        this.eventType = eventType;
+        this.eventDescription = eventDescription;
     }
 
     public String getEventName() {
@@ -77,6 +89,30 @@ public class EventsModel {
 
     public void setEventTime(String eventTime) {
         this.eventTime = eventTime;
+    }
+
+    public void setEventImage(String eventImage) {
+        this.eventImage = eventImage;
+    }
+
+    public String getEventImage() {
+        return eventImage;
+    }
+
+    private void setEventType(String eventType) {
+        this.eventType = eventType;
+    }
+
+    public String getEventType() {
+        return eventType;
+    }
+
+    private void setEventDescription(String eventDescription) {
+        this.eventDescription = eventDescription;
+    }
+
+    public String getEventDescription() {
+        return eventDescription;
     }
 
 }

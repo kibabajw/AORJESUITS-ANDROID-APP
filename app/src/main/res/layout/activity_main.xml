@@ -5,43 +5,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/ac_main_top_relative_layout"
     tools:context=".MainActivity">
 
-   <com.google.android.material.appbar.AppBarLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:background="@drawable/zebrasagain">
-       <androidx.appcompat.widget.Toolbar
-           android:id="@+id/main_home_toolbar"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           app:layout_scrollFlags="scroll|enterAlways"
-           android:background="@android:color/transparent"
-           android:elevation="6dp">
-           <ImageView
-               android:src="@drawable/logo"
-               android:layout_marginTop="5dp"
-               android:layout_width="40dp"
-               android:layout_height="40dp"/>
-           <TextView
-               android:paddingLeft="10dp"
-               android:textColor="@color/maroon"
-               android:text="Jesuits Eastern Africa"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"/>
-       </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_home_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="noScroll"
+            android:background="@color/white"
+            android:elevation="6dp">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="@color/maroon"
+                android:text="Jesuits Eastern Africa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
 
-       <com.google.android.material.tabs.TabLayout
-           android:id="@+id/tabsHome"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           app:tabMode="scrollable"
-           app:tabGravity="fill"
-           android:background="@color/gray"
-           app:tabTextColor="@color/maroon"
-           android:elevation="6dp"
-           app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"/>
-   </com.google.android.material.appbar.AppBarLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabsHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            app:tabGravity="fill"
+            android:background="@color/white"
+            app:tabTextColor="@color/black"
+            android:elevation="6dp"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"/>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"

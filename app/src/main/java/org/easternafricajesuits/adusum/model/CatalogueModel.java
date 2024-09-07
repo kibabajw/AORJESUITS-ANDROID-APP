@@ -2,15 +2,18 @@ package org.easternafricajesuits.adusum.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class CatalogueModel {
+import java.util.List;
 
+public class CatalogueModel {
+    @SerializedName("catalogues")
+    private List<CatalogueModel> items;
     @SerializedName("catalogue_name")
     private String catalogue_name;
 
     @SerializedName("catalogue_file")
     private String catalogue_link;
 
-    public CatalogueModel(String catalogue_name, String catalogue_link) {
+    public CatalogueModel(List<CatalogueModel> items, String catalogue_name, String catalogue_link) {
         this.catalogue_name = catalogue_name;
         this.catalogue_link = catalogue_link;
     }
@@ -29,5 +32,9 @@ public class CatalogueModel {
 
     public void setCatalogue_link(String catalogue_link) {
         this.catalogue_link = catalogue_link;
+    }
+
+    public List<CatalogueModel> getItems() {
+        return items;
     }
 }

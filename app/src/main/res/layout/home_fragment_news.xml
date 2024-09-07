@@ -1,23 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="0dp"
+    android:background="@color/gray"
     android:id="@+id/homefragnewsRootLayout"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/home_frag_news_recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="60dp"
             android:scrollbars="vertical"/>
 
         <ProgressBar
             android:id="@+id/fraghomenewsProgressbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            app:layout_constraintTop_toBottomOf="@+id/home_frag_news_recyclerView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:visibility="gone" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <LinearLayout
+            android:id="@+id/news_page_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="0dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+                <Button
+                    android:id="@+id/btn_news_show_more"
+                    android:text="Load more..."
+                    android:textColor="@color/white"
+                    android:layout_width="140dp"
+                    android:background="@drawable/bgblue"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="34dp" />
+                <TextView
+                    android:id="@+id/news_page_footer_textview"
+                    android:text="Powered by Jesuits Eastern Africa, "
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"/>
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

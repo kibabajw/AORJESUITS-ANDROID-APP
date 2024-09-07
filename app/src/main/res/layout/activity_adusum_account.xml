@@ -5,55 +5,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/coordinator_parent"
     tools:context=".adusum.AdusumAccountActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar_layout"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAccount"
+        app:titleTextColor="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        android:backgroundTint="@color/maroon"
-        app:liftOnScroll="true"
-        android:fitsSystemWindows="true">
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:title=""
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:background="@color/white"
+        android:elevation="6dp"
+        app:layout_collapseMode="pin" />
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="@color/maroon"
-            app:expandedTitleTextAppearance="@color/white"
-            android:fitsSystemWindows="true">
-            <ImageView
-                android:id="@+id/adusumprofilepicture"
-                app:layout_collapseMode="parallax"
-                app:layout_collapseParallaxMultiplier="0.7"
-                android:scaleType="centerCrop"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"/>
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbarAccount"
-                app:titleTextColor="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:theme="@style/ThemeOverlay.AppCompat.Light"
-                app:title=""
-                app:layout_collapseMode="pin" />
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-
-    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:clipToPadding="false"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:cardElevation="5dp"
-            app:cardUseCompatPadding="true">
 
             <LinearLayout
                 android:padding="5dp"
@@ -61,73 +33,109 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <include layout="@layout/adusum_user_info_recycler_item" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adusumprofilepicture"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/gray"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="40dp" />
+
 
                 <TextView
-                    android:text="Catalogue"
+                    android:text="CATALOGUES"
                     android:fontFamily="@font/robotomedium"
                     android:paddingTop="15dp"
                     android:paddingBottom="5dp"
-                    android:textColor="#333"
-                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/textViewCatalogue"
-                    android:text=""
-                    android:paddingTop="5dp"
-                    android:textSize="18sp"
+                    android:text="OPEN AOR CATALOGUES"
+                    android:padding="5dp"
+                    android:textSize="15sp"
                     android:textColor="#1A9BCB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:text="Constitution"
+                    android:text="PERIODICALS"
+                    android:fontFamily="@font/robotomedium"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewShukran"
+                    android:text="OPEN PERIODICALS"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#1A9BCB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="CONSTITUTION"
                     android:paddingTop="15dp"
                     android:paddingBottom="5dp"
                     android:fontFamily="@font/robotomedium"
-                    android:textColor="#333"
-                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/textViewConstitution"
-                    android:text="Constitution"
-                    android:paddingTop="5dp"
-                    android:textSize="18sp"
+                    android:text="Constitutions of the Society of Jesus"
+                    android:textAllCaps="true"
+                    android:padding="5dp"
+                    android:textSize="15sp"
                     android:textColor="#1A9BCB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:text="Documents"
+                    android:text="NECROLOGY"
                     android:paddingTop="15dp"
                     android:paddingBottom="5dp"
                     android:fontFamily="@font/robotomedium"
-                    android:textColor="#333"
-                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewNecrology"
+                    android:text="OPEN NECROLOGY"
+                    android:textAllCaps="true"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#1A9BCB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/adusumRecycler"
-                    android:padding="5dp"
+                <TextView
+                    android:text="DOCUMENTS"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scrollbars="vertical"/>
+                    android:layout_height="wrap_content"/>
+
+                <ListView
+                    android:id="@+id/adusum_list_document_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
             </LinearLayout>
             <!--top linear-->
-        </androidx.cardview.widget.CardView>
+
     </androidx.core.widget.NestedScrollView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabChangeaccountpicture"
-        android:src="@drawable/ic_baseline_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:elevation="6dp"
-        app:pressedTranslationZ="12dp"
-        app:layout_anchor="@id/app_bar_layout"
-        app:layout_anchorGravity="bottom|right|end"/>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

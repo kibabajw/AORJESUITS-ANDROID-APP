@@ -5,88 +5,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/doornlock1"
+    android:background="@color/white"
     tools:context=".adusum.AdusumLoginActivity">
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="vertical">
-
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAdusumLogin"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        android:elevation="100dp"
+        app:popupTheme="@style/PopupOverlay" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:background="@drawable/login_cover">
         <TextView
             android:text="FOR AOR JESUITS ONLY"
-            android:background="@color/white"
-            android:alpha="0.7"
-            android:fontFamily="@font/creteroundregular"
-            android:textSize="22sp"
+            android:fontFamily="@font/opensansregular"
+            android:textSize="18sp"
             android:padding="5dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center" />
-
+            android:gravity="center"
+            android:layout_marginBottom="90dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/bground"
+        android:orientation="vertical">
         <com.google.android.material.textfield.TextInputLayout
+            android:layout_gravity="center"
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
             android:id="@+id/adusumLoginEditUsernameTextInputLayout"
             android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:errorTextColor="@color/white"
-            app:hintTextColor="@color/white">
+            app:errorTextColor="@color/red"
+            app:hintTextColor="@color/black">
             <EditText
                 android:id="@+id/adusumLoginEditUsername"
                 android:hint="Username"
-                android:textSize="18sp"
-                android:textColorHint="@color/white"
                 android:inputType="text"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/black"/>
+                style="@style/signup_input_style"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:layout_gravity="center"
+            app:hintEnabled="false"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
             android:id="@+id/adusumLoginEditPasswordTextInputLayout"
             android:layout_below="@+id/adusumLoginEditUsernameTextInputLayout"
             android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:errorTextColor="@color/white"
-            app:hintTextColor="@color/white">
+            app:errorTextColor="@color/red"
+            app:hintTextColor="@color/black">
             <EditText
                 android:id="@+id/adusumLoginEditPassword"
                 android:hint="Password"
-                android:textSize="18sp"
-                android:textColorHint="@color/white"
                 android:inputType="textPassword"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:textColor="@color/black"/>
+                style="@style/signup_input_style"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/adusumLoginButton"
             android:layout_below="@+id/adusumLoginEditPasswordTextInputLayout"
+            android:layout_gravity="center"
             android:text="LOGIN"
             android:textStyle="bold"
-            android:textColor="@color/maroon"
-            android:background="@color/gray"
+            android:textColor="@color/white"
+            android:background="@drawable/bgcornermaroon"
             android:layout_marginTop="30dp"
             android:textSize="18sp"
-            android:layout_width="280dp"
-            android:layout_height="48dp"/>
+            android:layout_width="@dimen/signup_input_width"
+            android:layout_height="55dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
             <TextView
                 android:id="@+id/adusumlinkcreateaccount"
                 android:text="Create account"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/robotomedium"
                 android:textSize="17sp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
+                android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"/>
@@ -97,8 +114,8 @@
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/robotomedium"
                 android:textSize="17sp"
-                android:textColor="@color/white"
-                android:gravity="right"
+                android:textColor="@color/black"
+                android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"/>

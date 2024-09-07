@@ -21,12 +21,13 @@ import com.google.android.material.tabs.TabLayout;
 import org.easternafricajesuits.adapters.HomePageAdapter;
 import org.easternafricajesuits.adusum.AdusumAccountActivity;
 import org.easternafricajesuits.adusum.AdusumLoginActivity;
-import org.easternafricajesuits.adusum.AdusumregisterActivity;
 import org.easternafricajesuits.adusum.ProbationActivity;
 import org.easternafricajesuits.adusum.databases.AdusumAccountSQLHelper;
 import org.easternafricajesuits.adusum.databases.AdusumDatabaseContract;
 import org.easternafricajesuits.databinding.ActivityMainBinding;
+import org.easternafricajesuits.fragments.HistoricalFragment;
 import org.easternafricajesuits.fragments.HomeFragmentAboutus;
+import org.easternafricajesuits.fragments.HomeFragmentLibrary;
 import org.easternafricajesuits.fragments.HomeFragmentDailyExamen;
 import org.easternafricajesuits.fragments.HomeFragmentEvents;
 import org.easternafricajesuits.fragments.HomeFragmentJoinus;
@@ -37,6 +38,7 @@ import org.easternafricajesuits.jesuitjargon.JesuitJargonActivity;
 import org.easternafricajesuits.merchandise.MerchandiseActivity;
 import org.easternafricajesuits.spiritualexercises.SpiritualExercisesActivity;
 import org.easternafricajesuits.thepilgrim.ThePilgrimActivity;
+import org.easternafricajesuits.utils.UtilSharedPref;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,15 +57,13 @@ public class MainActivity extends AppCompatActivity {
 
     // SQLite database
     private AdusumAccountSQLHelper mAdusumAccountSQLHelper;
-
+    private UtilSharedPref utilSharedPref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
-
-//        getWindow().setBackgroundDrawable(null);
 
         initialise();
         prepareDataResource();
@@ -75,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
 
         hometablayout.setupWithViewPager(viewPager);
         mAdusumAccountSQLHelper = new AdusumAccountSQLHelper(this);
+
+        utilSharedPref = new UtilSharedPref(MainActivity.this);
 
     }
 
@@ -88,100 +90,89 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.home_menu_item_spiritual_exercises:
-                startActivity(new Intent(MainActivity.this, SpiritualExercisesActivity.class));
-                return true;
             case R.id.home_menu_item_ad_usum:
-                // check if there is an account in local storage and whether or not the account is active
-                SQLiteDatabase db = mAdusumAccountSQLHelper.getReadableDatabase();
-
-                String[] projection = {
-                        AdusumDatabaseContract.BrotherEntry._ID,
-                        AdusumDatabaseContract.BrotherEntry.COLUMN_BROTHER_ACCOUNT_STATUS,
-                        AdusumDatabaseContract.BrotherEntry.COLUMN_BROTHER_COOKIE_TOKEN
-                };
-
-                Cursor cursor = db.query(
-                        AdusumDatabaseContract.BrotherEntry.ADUSUMACCOUNT_TABLE,
-                        projection,
-                        null,
-                        null,
-                        null,
-                        null,
-                        null
-                );
-
-                try {
-                    if (cursor.getCount() == 0) {
-                        startActivity(new Intent(MainActivity.this, AdusumregisterActivity.class));
-                        return true;
-                    } else {
-                        int tokenColumnIndex = cursor.getColumnIndex(AdusumDatabaseContract.BrotherEntry.COLUMN_BROTHER_COOKIE_TOKEN);
-                        int statusColumnIndex = cursor.getColumnIndex(AdusumDatabaseContract.BrotherEntry.COLUMN_BROTHER_ACCOUNT_STATUS);
-
-                        String tkn = "";
-                        String status = "";
-
-                        while (cursor.moveToNext()) {
-                             tkn = cursor.getString(tokenColumnIndex);
-                             status = cursor.getString(statusColumnIndex);
-                        }
-
-                        if (status.equals("0") && tkn.equals("0")) {
-                            startActivity(new Intent(MainActivity.this, ProbationActivity.class));
-                            return true;
-                        } else if (status.equals("1") && tkn.equals("0")) {
-                            startActivity(new Intent(MainActivity.this, AdusumLoginActivity.class));
-                            return true;
-                        } else {
-                            startActivity(new Intent(MainActivity.this, AdusumAccountActivity.class));
-                            return true;
-                        }
-                    }
-                } finally {
-                    cursor.close();
-                }
-            case R.id.home_menu_item_the_pilgrim:
-                startActivity(new Intent(MainActivity.this, ThePilgrimActivity.class));
-                return true;
-            case  R.id.home_menu_item_jesuit_jargon:
-                startActivity(new Intent(MainActivity.this, JesuitJargonActivity.class));
+                processadusum();
                 return true;
             case R.id.home_menu_item_merchandise:
                 startActivity(new Intent(MainActivity.this, MerchandiseActivity.class));
+                return true;
+            case R.id.home_menu_item_privacy_policy:
+                startActivity(new Intent(MainActivity.this, PrivacyPolicyActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
+    private void processadusum() {
+        SQLiteDatabase db = mAdusumAccountSQLHelper.getReadableDatabase();
+
+        String[] projection = {
+                AdusumDatabaseContract.BrotherEntry._ID,
+                AdusumDatabaseContract.BrotherEntry.COLUMN_BROTHER_ACCOUNT_STATUS,
+                AdusumDatabaseContract.BrotherEntry.COLUMN_BROTHER_COOKIE_TOKEN
+        };
+
+        Cursor cursor = db.query(
+                AdusumDatabaseContract.BrotherEntry.ADUSUMACCOUNT_TABLE,
+                projection,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        try {
+            if (cursor.getCount() == 0) {
+                startActivity(new Intent(MainActivity.this, AdusumLoginActivity.class));
+            } else {
+                int tokenColumnIndex = cursor.getColumnIndex(AdusumDatabaseContract.BrotherEntry.COLUMN_BROTHER_COOKIE_TOKEN);
+                int statusColumnIndex = cursor.getColumnIndex(AdusumDatabaseContract.BrotherEntry.COLUMN_BROTHER_ACCOUNT_STATUS);
+
+                String tkn = "";
+                String status = "";
+
+                while (cursor.moveToNext()) {
+                    tkn = cursor.getString(tokenColumnIndex);
+                    status = cursor.getString(statusColumnIndex);
+                }
+
+                if (status.equals("0") && tkn.equals("0")) {
+                    startActivity(new Intent(MainActivity.this, ProbationActivity.class));
+                } else if (status.equals("1") && tkn.equals("0")) {
+                    startActivity(new Intent(MainActivity.this, AdusumLoginActivity.class));
+                } else {
+                    startActivity(new Intent(MainActivity.this, AdusumAccountActivity.class));
+                }
+            }
+        } finally {
+            cursor.close();
+        }
+    }
+
+
     private void initialise() {
-//        Toolbar main_home_toolbar = (Toolbar) findViewById(R.id.main_home_toolbar);
         Toolbar main_home_toolbar = binding.mainHomeToolbar;
         setSupportActionBar(main_home_toolbar);
-        main_home_toolbar.setTitle("AOR JESUITS");
+//        main_home_toolbar.setTitle("AOR JESUITS");
 
-        //set Toolbar's transparency
-//        main_home_toolbar.getBackground().setAlpha(2);
-
-//        getSupportActionBar().setIcon(R.drawable.logo);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-
-//        viewPager = (ViewPager) findViewById(R.id.viewPager);
-//        hometablayout = (TabLayout) findViewById(R.id.tabsHome);
 
         viewPager = binding.viewPager;
         hometablayout = binding.tabsHome;
     }
 
     private void prepareDataResource() {
-        addData(new HomeFragmentNews(), "News");
-        addData(new HomeFragmentAboutus(), "About us");
-        addData(new HomeFragmentEvents(), "Events");
-        addData(new HomeFragmentDailyExamen(), "Daily Examen");
+        addData(new HomeFragmentNews(), getString(R.string.news));
+        addData(new HomeFragmentAboutus(), getString(R.string.about_us));
+        addData(new HomeFragmentEvents(), getString(R.string.events));
+        addData(new HomeFragmentDailyExamen(), getString(R.string.daily_examen_title));
         addData(new HomeFragmentUAPs(), "UAPs");
-        addData(new HomeFragmentPrayers(), "Prayers");
-        addData(new HomeFragmentJoinus(), "Join us");
+        addData(new HomeFragmentPrayers(), getString(R.string.prayers));
+        addData(new HistoricalFragment(), getString(R.string.historical));
+        addData(new HomeFragmentJoinus(), getString(R.string.join_us));
+        addData(new HomeFragmentLibrary(), "Library");
     }
 
     private void addData(Fragment fragment, String title) {
@@ -195,8 +186,9 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
             finish();
         } else {
-            Toast.makeText(MainActivity.this, "Press back again to exit", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, R.string.press_back_again_to_exit, Toast.LENGTH_SHORT).show();
         }
         pressedTime = System.currentTimeMillis();
     }
+
 }

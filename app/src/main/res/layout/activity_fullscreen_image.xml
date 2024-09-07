@@ -13,6 +13,7 @@
         app:titleTextColor="@color/white"
         android:id="@+id/fullscreen_image_toolbar"
         android:layout_width="match_parent"
+        android:elevation="10dp"
         android:background="@android:color/transparent"
         android:layout_height="wrap_content"/>
 

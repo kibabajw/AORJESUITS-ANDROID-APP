@@ -10,6 +10,9 @@ public class AdusumModel {
     @SerializedName("username")
      private String username;
 
+    @SerializedName("email_address")
+    private String email_address;
+
     @SerializedName("date_of_birth")
      private String date_of_birth;
 
@@ -25,9 +28,10 @@ public class AdusumModel {
     @SerializedName("profile_picture")
     private String profile_picture;
 
-    public AdusumModel(String fullname, String username, String date_of_birth, String date_of_entry, String name_of_provincial, String current_community, String profile_picture) {
+    public AdusumModel(String fullname, String username, String email_address, String date_of_birth, String date_of_entry, String name_of_provincial, String current_community, String profile_picture) {
         this.fullname = fullname;
         this.username = username;
+        this.email_address = email_address;
         this.date_of_birth = date_of_birth;
         this.date_of_entry = date_of_entry;
         this.name_of_provincial = name_of_provincial;
@@ -49,6 +53,14 @@ public class AdusumModel {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public void setEmail_address(String email_address) {
+        this.email_address = email_address;
+    }
+
+    public String getEmail_address() {
+        return email_address;
     }
 
     public String getDate_of_birth() {

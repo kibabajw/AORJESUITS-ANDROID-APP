@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +12,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,12 +21,8 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-
-import org.easternafricajesuits.AllConstants;
 import org.easternafricajesuits.R;
 import org.easternafricajesuits.adapters.FragEventsAdapter;
-import org.easternafricajesuits.adusum.model.Apostleship;
 import org.easternafricajesuits.clients.RetrofitClient;
 import org.easternafricajesuits.databinding.HomeFragmentEventsBinding;
 import org.easternafricajesuits.models.EventsModel;
@@ -44,6 +38,7 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import xyz.hasnat.sweettoast.SweetToast;
 
 public class HomeFragmentEvents extends Fragment {
 
@@ -61,10 +56,28 @@ public class HomeFragmentEvents extends Fragment {
 
     private String selectedMonth = "";
     private String selectedYear = "";
-
+    private String thisYear = null;
+    private String thisMonth = null;
     private DateFormat timenow;
+    private LinearLayout empty_view_events;
 
     private NetworkChangeListener mReceiver = new NetworkChangeListener();
+    private int selectioncounter = 0;
+
+    private String[] monthsarray = {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+    };
 
     public HomeFragmentEvents() {
 
@@ -83,17 +96,19 @@ public class HomeFragmentEvents extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        empty_view_events = binding.emptyViewEvents;
+
         currentMonth = new SimpleDateFormat("MMMM");
         currentYear = new SimpleDateFormat("yyyy");
         currentDay = new SimpleDateFormat("d");
+
         date = new Date();
 
         // set month-text and month-digit
-        String thisMonth = currentMonth.format(date);
-        binding.txtmonth.setText(thisMonth);
-
+        thisYear = currentYear.format(date);
+        thisMonth = currentMonth.format(date).toLowerCase();
         String today = currentDay.format(date);
-        binding.txtmonthdigit.setText(today);
+
         // end set month-text and month-digit
 
         eventsRecyclerView = binding.homeFragEventsRecyclerview;
@@ -110,7 +125,7 @@ public class HomeFragmentEvents extends Fragment {
         spinnerMonths.setAdapter(adapterMonths);
 
         for (int i = 0; i < adapterMonths.getCount(); ++i) {
-            if (String.valueOf(adapterMonths.getItem(i)).equals(currentMonth.format(date))) {
+            if (String.valueOf(adapterMonths.getItem(i)).toLowerCase().equals(thisMonth)) {
                 spinnerMonths.setSelection(i);
                 selectedMonth = String.valueOf(adapterMonths.getItem(i));
             }
@@ -120,7 +135,12 @@ public class HomeFragmentEvents extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedMonth = String.valueOf(parent.getItemAtPosition(position));
-                fetchEvents(selectedMonth, selectedYear);
+                if (selectioncounter >= 2) {
+//                    fetchFullmonthEvents(selectedMonth, selectedYear);
+                    fetchFullmonthEvents(monthsarray[spinnerMonths.getSelectedItemPosition()], selectedYear);
+                } else {
+                    ++selectioncounter;
+                }
             }
 
             @Override
@@ -137,7 +157,7 @@ public class HomeFragmentEvents extends Fragment {
         spinnerYears.setAdapter(adapterYears);
 
         for (int j = 0; j < adapterYears.getCount(); ++j) {
-            if (String.valueOf(adapterYears.getItem(j)).equals(currentYear.format(date))) {
+            if (String.valueOf(adapterYears.getItem(j)).equals(thisYear)) {
                 spinnerYears.setSelection(j);
                 selectedYear = String.valueOf(adapterYears.getItem(j));
             }
@@ -147,7 +167,12 @@ public class HomeFragmentEvents extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedYear = String.valueOf(parent.getItemAtPosition(position));
-                fetchEvents(selectedMonth, selectedYear);
+                if (selectioncounter >= 2) {
+//                    fetchFullmonthEvents(selectedMonth, selectedYear);
+                    fetchFullmonthEvents(monthsarray[spinnerMonths.getSelectedItemPosition()], selectedYear);
+                } else {
+                    ++selectioncounter;
+                }
             }
 
             @Override
@@ -156,11 +181,12 @@ public class HomeFragmentEvents extends Fragment {
             }
         });
 
-        fetchEvents(selectedMonth, selectedYear);
-        prayers(selectedMonth, selectedYear);
+//        fetchEvents(thisMonth, thisYear);
+        fetchEvents(monthsarray[spinnerMonths.getSelectedItemPosition()], selectedYear);
+//        prayers(selectedMonth, selectedYear);
     }
 
-    private void prayers(String selectedMonth, String selectedYear) {
+    /*private void prayers(String selectedMonth, String selectedYear) {
         Call<Apostleship> call = RetrofitClient.getInstance().getApi().getApostleship(selectedMonth, selectedYear);
         call.enqueue(new Callback<Apostleship>() {
             @Override
@@ -170,10 +196,6 @@ public class HomeFragmentEvents extends Fragment {
                     if (getContext() != null) {
                         binding.txtApostleshipName.setText(response.body().getApostlename());
                         binding.txtApostleshipContent.setText(response.body().getApostleitem());
-                        Glide.with(getContext())
-                                .load(AllConstants.IMAGE_URL + response.body().getApostleimage())
-                                .placeholder(R.drawable.loadingdots)
-                                .into(binding.apostleshipImage);
                     }
 
                 }
@@ -184,7 +206,7 @@ public class HomeFragmentEvents extends Fragment {
 //                Toast.makeText(getContext(), "An error occured", Toast.LENGTH_SHORT).show();
             }
         });
-    }
+    }*/
 
     private void fetchEvents(String whichMonth, String whichYear) {
         Call<EventsreceivedModel> call = RetrofitClient.getInstance().getApi().getEvents(whichMonth, whichYear);
@@ -193,19 +215,50 @@ public class HomeFragmentEvents extends Fragment {
             @Override
             public void onResponse(Call<EventsreceivedModel> call, Response<EventsreceivedModel> response) {
                 if (response.code() == 200) {
+                    empty_view_events.setVisibility(View.GONE);
+
                     eventsModel.clear();
                     eventsModel.addAll(response.body().getEventsModel());
                     eventsAdapter.notifyDataSetChanged();
+                } else {
+                    eventsModel.clear();
+                    eventsAdapter.notifyDataSetChanged();
+                    empty_view_events.setVisibility(View.VISIBLE);
                 }
             }
 
             @Override
             public void onFailure(Call<EventsreceivedModel> call, Throwable t) {
-//                Toast.makeText(getContext(), "An error occured", Toast.LENGTH_SHORT).show();
+                SweetToast.error(getContext(), getString(R.string.sorry_an_error_occured), 3500);
             }
         });
     }
 
+    private void fetchFullmonthEvents(String whichMonth, String whichYear) {
+        Call<EventsreceivedModel> call = RetrofitClient.getInstance().getApi().getFullmonthevents(whichMonth, whichYear);
+
+        call.enqueue(new Callback<EventsreceivedModel>() {
+            @Override
+            public void onResponse(Call<EventsreceivedModel> call, Response<EventsreceivedModel> response) {
+                if (response.code() == 200) {
+                    empty_view_events.setVisibility(View.GONE);
+
+                    eventsModel.clear();
+                    eventsModel.addAll(response.body().getEventsModel());
+                    eventsAdapter.notifyDataSetChanged();
+                } else {
+                    eventsModel.clear();
+                    eventsAdapter.notifyDataSetChanged();
+                    empty_view_events.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<EventsreceivedModel> call, Throwable t) {
+                SweetToast.error(getContext(), getString(R.string.sorry_an_error_occured), 3500);
+            }
+        });
+    }
     private BroadcastReceiver mLocalReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -213,8 +266,9 @@ public class HomeFragmentEvents extends Fragment {
             if (!isConnected) {
 
             } else {
-                prayers(selectedMonth, selectedYear);
-                fetchEvents(selectedMonth, selectedYear);
+//                prayers(selectedMonth, selectedYear);
+//                fetchEvents(selectedMonth, selectedYear);
+                fetchEvents(monthsarray[spinnerMonths.getSelectedItemPosition()], selectedYear);
             }
         }
     };

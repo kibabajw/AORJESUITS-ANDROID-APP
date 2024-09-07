@@ -1,6 +1,8 @@
 package org.easternafricajesuits.adusum;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.ProgressDialog;
 import android.content.ContentUris;
@@ -28,10 +30,12 @@ import org.easternafricajesuits.adusum.model.UserLoginModel;
 import org.easternafricajesuits.adusum.model.UserLoginReceived;
 import org.easternafricajesuits.clients.RetrofitClient;
 import org.easternafricajesuits.adusum.databases.AdusumDatabaseContract;
+import org.easternafricajesuits.databinding.ActivityAdusumLoginBinding;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import xyz.hasnat.sweettoast.SweetToast;
 
 public class AdusumLoginActivity extends AppCompatActivity {
 
@@ -44,10 +48,20 @@ public class AdusumLoginActivity extends AppCompatActivity {
 
     // SQLite database
     private AdusumAccountSQLHelper mAdusumAccountSQLHelper;
+    private ActivityAdusumLoginBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adusum_login);
+        binding = ActivityAdusumLoginBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+        Toolbar toolbar = binding.toolbarAdusumLogin;
+        toolbar.setTitle("");
+        setSupportActionBar(toolbar);
+
+        ActionBar actionBar = getSupportActionBar();
+        ((ActionBar) actionBar).setDisplayHomeAsUpEnabled(true);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -119,28 +133,34 @@ public class AdusumLoginActivity extends AppCompatActivity {
                         if (insertNewBrotherToSQLite(userLogin)) {
                             loginProgress.dismiss();
                             startActivity(new Intent(AdusumLoginActivity.this, AdusumAccountActivity.class));
+                            finish();
                         }
 
                     } else {
                         if(updateBrotherwithToken(userLogin.getLoginbrotherID(), userLogin.getBrotherTOKEN())) {
                             loginProgress.dismiss();
                             startActivity(new Intent(AdusumLoginActivity.this, AdusumAccountActivity.class));
+                            finish();
                         }
                     }
 
 
                 } else if(response.code() == 401) {
                     loginProgress.dismiss();
-                    Toast.makeText(AdusumLoginActivity.this, "Incorrect password", Toast.LENGTH_LONG).show();
+
+                    SweetToast.warning(AdusumLoginActivity.this, "Incorrect password", 3000);
                 } else if (response.code() == 403) {
                     loginProgress.dismiss();
-                    Toast.makeText(AdusumLoginActivity.this, "You account has not been confirmed", Toast.LENGTH_LONG).show();
+
+                    SweetToast.info(AdusumLoginActivity.this, "You account has not been confirmed", 3000);
                 } else if (response.code() == 404) {
                     loginProgress.dismiss();
-                    Toast.makeText(AdusumLoginActivity.this, "Unrecognized credentials", Toast.LENGTH_LONG).show();
+
+                    SweetToast.warning(AdusumLoginActivity.this, "Unrecognized credentials", 3000);
                 } else {
                     loginProgress.dismiss();
-                    Toast.makeText(AdusumLoginActivity.this, "Could not login", Toast.LENGTH_LONG).show();
+
+                    SweetToast.error(AdusumLoginActivity.this, "Could not login", 3000);
                 }
             }
 
@@ -200,8 +220,8 @@ public class AdusumLoginActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<UserLoginReceived> call, Throwable t) {
                 loginProgress.dismiss();
-                Log.i("LOGIN", t.toString());
-                Toast.makeText(AdusumLoginActivity.this, "Error,  try again", Toast.LENGTH_SHORT).show();
+                
+                SweetToast.error(AdusumLoginActivity.this, "Error,  try again", 3000);
             }
         });
     }

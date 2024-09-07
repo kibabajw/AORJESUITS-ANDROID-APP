@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/elephant"
+    android:background="@color/white"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <LinearLayout
@@ -15,21 +15,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/white"
-            android:alpha="0.7">
+            android:layout_margin="2.5dp">
             <TextView
                 android:text="The Daily Examen"
-                android:gravity="center"
-                android:layout_margin="10dp"
+                android:gravity="left"
+                android:padding="5dp"
                 android:textStyle="bold"
-                android:textSize="22sp"
-                android:textColor="@color/maroon"
-                android:fontFamily="@font/matescregular"
+                android:textSize="18sp"
+                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <com.codesgood.views.JustifiedTextView
+
+            <TextView
                 android:text="@string/daily_examen"
-                style="@style/paragraphBold"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensansregular"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="7dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
@@ -37,154 +41,224 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="3dp">
         <TextView
-            android:text="1. Become aware of God’s presence"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="21sp"
-            android:textColor="@color/maroon"
-            android:fontFamily="@font/matescregular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:alpha="0.7"/>
-        <ImageView
-            android:scaleType="fitXY"
-            android:src="@drawable/dailyexamenbecomeawareofgodspresence"
+            android:padding="2.5dp"
+            android:text="1.Become aware of God’s presence"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:contentDescription="The Jesuits"/>
-        <com.codesgood.views.JustifiedTextView
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:elevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+                android:scaleType="fitXY"
+                android:src="@drawable/dailyexamenbecomeawareofgodspresence"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
             android:text="@string/examen_one"
-            style="@style/paragraphBoldNoMargin"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="7dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:alpha="0.7"/>
-    </LinearLayout>
+            android:layout_height="wrap_content"/>
+    </LinearLayout><!--    1 -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="3dp">
         <TextView
-            android:text="2. Review the day with gratitude"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="21sp"
-            android:textColor="@color/maroon"
-            android:fontFamily="@font/matescregular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:alpha="0.7"/>
-        <ImageView
-            android:scaleType="fitXY"
-            android:src="@drawable/dailyexamenreviewthedaywithgratitude"
+            android:text="2.Review the day with gratitude"
+            android:gravity="left"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:contentDescription="Review the day with gratitude"/>
-        <com.codesgood.views.JustifiedTextView
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:elevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+                android:scaleType="fitXY"
+                android:src="@drawable/dailyexamenreviewthedaywithgratitude"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
             android:text="@string/examen_two"
-            style="@style/paragraphBoldNoMargin"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="7dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:alpha="0.7"/>
-    </LinearLayout>
+            android:layout_height="wrap_content"/>
+    </LinearLayout> <!-- 2 -->
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="3dp">
         <TextView
-            android:text="3. Pay attention to your emotions"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="21sp"
-            android:textColor="@color/maroon"
-            android:fontFamily="@font/matescregular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:alpha="0.7"/>
-        <ImageView
-            android:scaleType="fitXY"
-            android:src="@drawable/dailyexamenpayattentiontoyouremotions"
+            android:text="3.Pay attention to your emotions"
+            android:gravity="left"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:contentDescription="Review the day with gratitude"/>
-        <com.codesgood.views.JustifiedTextView
+            android:layout_height="wrap_content">
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+                android:scaleType="fitXY"
+                android:src="@drawable/dailyexamenpayattentiontoyouremotions"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
             android:text="@string/examen_three"
-            style="@style/paragraphBoldNoMargin"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="7dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:alpha="0.7"/>
-    </LinearLayout>
+            android:layout_height="wrap_content"/>
+    </LinearLayout> <!--  3 -->
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="3dp">
         <TextView
-            android:text="4. Choose one feature of the day and pray from it"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="21sp"
-            android:textColor="@color/maroon"
-            android:fontFamily="@font/matescregular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:alpha="0.7"/>
-        <ImageView
-            android:scaleType="fitXY"
-            android:src="@drawable/dailyexamenchooseonefeatureoftheday"
+            android:text="4.Choose one feature of the day and pray from it"
+            android:gravity="left"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:contentDescription="The Jesuits"/>
-        <com.codesgood.views.JustifiedTextView
+            android:layout_height="wrap_content">
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/dailyexamenchooseonefeatureoftheday"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
             android:text="@string/examen_four"
-            style="@style/paragraphBoldNoMargin"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="7dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:alpha="0.7"/>
-    </LinearLayout>
+            android:layout_height="wrap_content"/>
+    </LinearLayout> <!-- 4 -->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:text="5. Look toward tomorrow"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="21sp"
-            android:textColor="@color/maroon"
-            android:fontFamily="@font/matescregular"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:alpha="0.7"/>
-        <ImageView
-            android:scaleType="fitXY"
-            android:src="@drawable/dailyexamenlooktowardtomorrow"
-            android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:contentDescription="The Jesuits"/>
-        <com.codesgood.views.JustifiedTextView
-            android:text="@string/examen_five"
-            style="@style/paragraphBoldNoMargin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:alpha="0.7"/>
-    </LinearLayout>
 
-    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.Look toward tomorrow"
+                android:gravity="left"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dailyexamenlooktowardtomorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:text="@string/examen_five"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensansregular"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout> <!-- 5 -->
+
+    </LinearLayout><!--    covering all -->
+
 
 </androidx.core.widget.NestedScrollView>

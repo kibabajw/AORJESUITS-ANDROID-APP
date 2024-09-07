@@ -2,6 +2,7 @@ package org.easternafricajesuits.adusum;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.DownloadManager;
 import android.app.ProgressDialog;
 import android.content.ContentUris;
@@ -19,6 +20,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.FileUtils;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.util.Base64;
 import android.util.Log;
@@ -26,7 +28,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +47,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -47,12 +56,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.easternafricajesuits.AllConstants;
+import org.easternafricajesuits.FatherGeneralActivity;
+import org.easternafricajesuits.FatherProvincialActivity;
 import org.easternafricajesuits.MainActivity;
+import org.easternafricajesuits.OtherDocumentsActivity;
 import org.easternafricajesuits.adusum.catalogue.CatalogueActivity;
 import org.easternafricajesuits.adusum.constitution.ConstitutionActivity;
 import org.easternafricajesuits.adusum.model.AdusumModel;
 import org.easternafricajesuits.adusum.model.CatalogueModel;
 import org.easternafricajesuits.adusum.model.ImageClass;
+import org.easternafricajesuits.adusum.shukran.ShukranActivity;
 import org.easternafricajesuits.clients.RetrofitClient;
 import org.easternafricajesuits.adusum.databases.AdusumAccountSQLHelper;
 import org.easternafricajesuits.adusum.databases.AdusumCursorAdapter;
@@ -63,6 +76,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.easternafricajesuits.R;
 import org.easternafricajesuits.adusum.model.AdusumDocuments;
+import org.easternafricajesuits.databinding.ActivityAdusumAccountBinding;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -81,11 +95,10 @@ import retrofit2.Response;
 
 public class AdusumAccountActivity extends AppCompatActivity {
 
+    private ActivityAdusumAccountBinding binding;
     private static final int PERMISSIONS_FILES_REQUEST_CODE = 11;
 
     public static final String MY_USER_ID = "MY_USER_ID";
-    private RecyclerView recyclerView;
-    private AdusumDocuments adusumDocuments;
 
     private static final int BROTHER_LOADER = 0;
 
@@ -115,17 +128,24 @@ public class AdusumAccountActivity extends AppCompatActivity {
     private ImageView adusumprofilepicture;
 
     private TextView textViewCatalogue;
+    private TextView textViewShukran;
     private TextView textViewConstitution;
+    private TextView textViewNecrology;
     private DownloadManager downloadManager;
 
     private AdusumAccountSQLHelper mAdusumAccountSQLHelper;
 
     private ProgressDialog progressDialog;
 
+    String [] documenttypes = {"Father Provincial", "Father General", "Others"};
+    private ListView listViewDocumentTypes;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adusum_account);
+        binding = ActivityAdusumAccountBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
         mAdusumAccountSQLHelper = new AdusumAccountSQLHelper(this);
 
@@ -136,11 +156,46 @@ public class AdusumAccountActivity extends AppCompatActivity {
         ((ActionBar) actionBarAccount).setDisplayHomeAsUpEnabled(true);
 
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayShowTitleEnabled(true);
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
         }
 
-        textViewCatalogue = findViewById(R.id.textViewCatalogue);
-        textViewConstitution = findViewById(R.id.textViewConstitution);
+        // initialise List for document types
+        listViewDocumentTypes = binding.adusumListDocumentTypes;
+        ArrayAdapter<String> arrayAdapterDocumentTypes = new ArrayAdapter<String>(this, R.layout.listdocumenttypesadusum, R.id.tv_documenttype,
+                documenttypes);
+        listViewDocumentTypes.setAdapter(arrayAdapterDocumentTypes);
+
+        listViewDocumentTypes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position) {
+                    case 0:
+                        startActivity(new Intent(AdusumAccountActivity.this, FatherProvincialActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(AdusumAccountActivity.this, FatherGeneralActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(AdusumAccountActivity.this, OtherDocumentsActivity.class));
+                        break;
+                }
+            }
+        });
+
+//        textViewCatalogue = findViewById(R.id.textViewCatalogue);
+//        textViewConstitution = findViewById(R.id.textViewConstitution);
+
+        textViewCatalogue = binding.textViewCatalogue;
+        textViewShukran = binding.textViewShukran;
+        textViewConstitution = binding.textViewConstitution;
+        textViewNecrology = binding.textViewNecrology;
+
+        textViewShukran.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AdusumAccountActivity.this, ShukranActivity.class));
+            }
+        });
 
         textViewConstitution.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,21 +205,16 @@ public class AdusumAccountActivity extends AppCompatActivity {
             }
         });
 
-        recyclerView = findViewById(R.id.adusumRecycler);
-        recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        recyclerView.smoothScrollToPosition(0);
+        textViewNecrology.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AdusumAccountActivity.this, NecrologyActivity.class));
+            }
+        });
 
         fetchCatalogue();
-        fetchDocuments();
 
         // initialise views
-        tvUsername = (TextView) findViewById(R.id.adusum_brother_info_list_item_info_data);
-        tvFullname = (TextView) findViewById(R.id.adusum_list_item_fullname);
-        tvDateofbirth = (TextView) findViewById(R.id.adusum_list_item_date_of_birth);
-        tvDateofentry = (TextView) findViewById(R.id.adusum_list_item_date_of_entry);
-        tvNameofprovincial = (TextView) findViewById(R.id.tVadusumaccountNameofprovincial);
-        tvCurrentcommunity = (TextView) findViewById(R.id.tVadusumaccountCurrentcommunity);
         tbAccount = (Toolbar) findViewById(R.id.toolbarAccount);
         adusumprofilepicture = (ImageView) findViewById(R.id.adusumprofilepicture);
         progressDialog = new ProgressDialog(AdusumAccountActivity.this);
@@ -172,59 +222,7 @@ public class AdusumAccountActivity extends AppCompatActivity {
          userOnlineID = fetchmyidLocally();
 
          fetchMyOnlineInfo(userOnlineID);
-
-        fabChangeAccountPicture = (FloatingActionButton) findViewById(R.id.fabChangeaccountpicture);
-        fabChangeAccountPicture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // check for permisions first
-                askforpermission();
-            }
-        });
     }
-
-    private void askforpermission() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (ContextCompat.checkSelfPermission(AdusumAccountActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-                openGallery();
-            } else {
-                ActivityCompat.requestPermissions(AdusumAccountActivity.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, PERMISSIONS_FILES_REQUEST_CODE);
-            }
-        } else {
-            openGallery();
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == PERMISSIONS_FILES_REQUEST_CODE) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                openGallery();
-            } else {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    if (shouldShowRequestPermissionRationale(Manifest.permission.READ_EXTERNAL_STORAGE)) {
-                        new AlertDialog.Builder(this).setTitle("Open gallery")
-                                .setMessage("The application requires permission to open the gallery, click Ok to allow")
-                                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        ActivityCompat.requestPermissions(AdusumAccountActivity.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, PERMISSIONS_FILES_REQUEST_CODE);
-                                    }
-                                })
-                                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        dialog.dismiss();
-                                    }
-                                }).show();
-                    }
-                }
-            }
-        }
-    }
-
-
 
     private void fetchCatalogue() {
         Call<CatalogueModel> catalogueModelCall = RetrofitClient.getInstance().getApi().adusumGetCatalogue();
@@ -232,12 +230,16 @@ public class AdusumAccountActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<CatalogueModel> call, Response<CatalogueModel> response) {
                 if (response.code() == 200) {
-                    textViewCatalogue.setText(response.body().getCatalogue_name());
                     textViewCatalogue.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            startActivity(new Intent(AdusumAccountActivity.this, CatalogueActivity.class));
-//                            downloadCatalogue(AllConstants.IMAGE_URL + response.body().getCatalogue_link());
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    startActivity(new Intent(AdusumAccountActivity.this, CatalogueActivity.class));
+                                }
+                            }, 500);
+
                         }
                     });
                 }
@@ -257,16 +259,6 @@ public class AdusumAccountActivity extends AppCompatActivity {
             }
         });
     }
-
-    private void downloadCatalogue(String catalogueLocation) {
-        downloadManager = (DownloadManager)getSystemService(Context.DOWNLOAD_SERVICE);
-        Uri uri = Uri.parse(catalogueLocation);
-        Toast.makeText(AdusumAccountActivity.this, "Downloading catalogue", Toast.LENGTH_SHORT).show();
-        DownloadManager.Request request = new DownloadManager.Request(uri);
-        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        Long reference = downloadManager.enqueue(request);
-    }
-
 
     private String fetchmyidLocally() {
         String userId = "";
@@ -308,18 +300,12 @@ public class AdusumAccountActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<AdusumModel> call, Response<AdusumModel> response) {
                 if (response.code() == 200) {
-                    tbAccount.setTitle(response.body().getFullname());
-
-                    tvUsername.setText(response.body().getUsername());
-                    tvFullname.setText(response.body().getFullname());
-                    tvDateofbirth.setText(response.body().getDate_of_birth());
-                    tvDateofentry.setText(response.body().getDate_of_entry());
-                    tvNameofprovincial.setText(response.body().getName_of_provincial());
-                    tvCurrentcommunity.setText(response.body().getCurrent_community());
+                    tbAccount.setTitle(response.body().getFullname().toUpperCase());
 
                     Glide.with(AdusumAccountActivity.this)
                             .load(AllConstants.IMAGE_URL + response.body().getProfile_picture())
-                            .placeholder(R.drawable.avatar)
+                            .centerInside()
+                            .placeholder(R.drawable.logo)
                             .into(adusumprofilepicture);
                 }
             }
@@ -339,27 +325,6 @@ public class AdusumAccountActivity extends AppCompatActivity {
         });
     }
 
-    private void fetchDocuments() {
-        Call<AdusumDocuments> call = RetrofitClient
-                .getInstance()
-                .getApi()
-                .getDocuments();
-        call.enqueue(new Callback<AdusumDocuments>() {
-            @Override
-            public void onResponse(Call<AdusumDocuments> call, Response<AdusumDocuments> response) {
-                if (response.code() == 200) {
-                    List<AdusumDocuments> items = (List<AdusumDocuments>) response.body().getItems();
-                    recyclerView.setAdapter(new AdusumAdapter(getApplicationContext(), items));
-                    recyclerView.smoothScrollToPosition(0);
-                }
-            }
-
-            @Override
-            public void onFailure(Call<AdusumDocuments> call, Throwable t) {
-//                Toast.makeText(AdusumAccountActivity.this, "Error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -387,63 +352,11 @@ public class AdusumAccountActivity extends AppCompatActivity {
                 }
 
                 return true;
+            case R.id.adusum_account_menu_item_delete_account:
+                startActivity(new Intent(AdusumAccountActivity.this, DeleteAccountActivity.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
-        }
-    }
-
-    private void openGallery() {
-//        Intent choosePhotoIntent = new Intent(Intent.ACTION_GET_CONTENT);
-        Intent choosePhotoIntent = new Intent(Intent.ACTION_PICK);
-        choosePhotoIntent.setType("image/*");
-        startActivityForResult(choosePhotoIntent, PICK_PHOTO_REQUEST);
-    }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (resultCode == RESULT_OK && requestCode == PICK_PHOTO_REQUEST) {
-            Uri selectedImage = data.getData();
-            String[] filePathColumn = {MediaStore.Images.Media.DATA};
-            Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null, null, null);
-            cursor.moveToFirst();
-
-            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-            mediaPath = cursor.getString(columnIndex);
-            adusumprofilepicture.setImageBitmap(BitmapFactory.decodeFile(mediaPath));
-
-            cursor.close();
-            postPath = mediaPath;
-
-            if (postPath != null) {
-                File file = new File(postPath);
-
-                RequestBody requestBody = RequestBody.create(MediaType.parse("image/*"), file);
-                MultipartBody.Part parts = MultipartBody.Part.createFormData("photo", file.getName(), requestBody);
-
-                RequestBody userid = RequestBody.create(MediaType.parse("text/plain"), userOnlineID);
-
-                Call<ImageClass> imageClassCall = RetrofitClient.getInstance().getApi().uploadImageraw(userid, parts);
-                imageClassCall.enqueue(new Callback<ImageClass>() {
-                    @Override
-                    public void onResponse(Call<ImageClass> call, Response<ImageClass> response) {
-                        ImageClass aClass = response.body();
-                        Toast.makeText(AdusumAccountActivity.this, aClass.getResponse(), Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    public void onFailure(Call<ImageClass> call, Throwable t) {
-                        Toast.makeText(AdusumAccountActivity.this, "Could not upload your photo", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-            } else {
-                Toast.makeText(this, "Could not open photo", Toast.LENGTH_LONG).show();
-            }
-        } else if (resultCode != RESULT_CANCELED) {
-            Toast.makeText(this, "Cancelled", Toast.LENGTH_SHORT).show();
         }
     }
 

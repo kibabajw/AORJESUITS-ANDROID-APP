@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/nile"
+    android:background="@color/white"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <LinearLayout
@@ -15,146 +15,186 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/white"
-            android:alpha="0.7">
+            android:orientation="vertical">
 
-            <com.codesgood.views.JustifiedTextView
+            <TextView
                 android:text="@string/intro_to_uaps"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="@dimen/fab_margin"
-                android:textStyle="normal"
-                android:layout_margin="10dp"
-                android:textSize="22sp"
+                android:textSize="17sp"
                 android:textColor="@color/black"
-                android:layout_gravity="center"/>
+                android:fontFamily="@font/opensansregular"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="7dp" />
         </LinearLayout>
 
 
-        <TextView
-            android:background="@color/white"
-            android:alpha="0.7"
-            android:text="1) SHOWING THE WAY TO GOD"
-            android:fontFamily="@font/matescregular"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="3dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"/>
-        <ImageView
-            android:src="@drawable/waytogod"
-            android:scaleType="fitXY"
-            android:layout_width="match_parent"
-            android:layout_height="235dp"/>
+            android:layout_marginTop="15dp">
+            <TextView
+                android:gravity="left"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1) SHOWING THE WAY TO GOD" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:src="@drawable/waytogod"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/white"
-            android:alpha="0.7">
-        <com.codesgood.views.JustifiedTextView
+            android:orientation="vertical">
+        <TextView
             android:text="@string/uaps_one"
-           style="@style/paragraphBold"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="7dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        </LinearLayout>
+        </LinearLayout><!-- 1 -->
 
-        <TextView
-            android:text="2) WALKING WITH THE EXCLUDED"
-            android:background="@color/white"
-            android:gravity="center"
-            android:alpha="0.7"
-            android:layout_marginTop="20dp"
-            android:textSize="22sp"
-            android:fontFamily="@font/matescregular"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="3dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"/>
-        <ImageView
-            android:src="@drawable/theexcluded"
-            android:scaleType="fitXY"
-            android:layout_width="match_parent"
-            android:layout_height="235dp"/>
+            android:layout_marginTop="15dp">
+            <TextView
+                android:gravity="left"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2) WALKING WITH THE EXCLUDED" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:src="@drawable/theexcluded"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/white"
-            android:alpha="0.7">
-        <com.codesgood.views.JustifiedTextView
+            android:orientation="vertical">
+        <TextView
             android:text="@string/uaps_two"
-            style="@style/paragraphBold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        </LinearLayout>
-
-        <TextView
-            android:text="3) JOURNEYING WITH YOUTH"
-            android:background="@color/white"
-            android:gravity="center"
-            android:alpha="0.7"
-            android:padding="5dp"
-            android:layout_marginTop="20dp"
-            android:textSize="22sp"
-            android:fontFamily="@font/matescregular"
-            android:textStyle="bold"
+            android:textSize="17sp"
             android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="7dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <ImageView
-            android:src="@drawable/theyouth"
-            android:scaleType="fitXY"
+        </LinearLayout><!-- 2 -->
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="3dp"
             android:layout_width="match_parent"
-            android:layout_height="235dp"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:gravity="left"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3) JOURNEYING WITH YOUTH" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:src="@drawable/theyouth"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/white"
-            android:alpha="0.7">
-        <com.codesgood.views.JustifiedTextView
+            android:orientation="vertical">
+        <TextView
             android:text="@string/uaps_three"
-            style="@style/paragraphBold"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="7dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         </LinearLayout>
+        <!--        3-->
 
-        <TextView
-            android:text="4) CARING FOR OUR COMMON HOME"
-            android:gravity="center"
-            android:background="@color/white"
-            android:alpha="0.7"
-            android:padding="5dp"
-            android:layout_marginTop="10dp"
-            android:textSize="22sp"
-            android:fontFamily="@font/matescregular"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="3dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <ImageView
-            android:src="@drawable/commonhome"
-            android:scaleType="fitXY"
-            android:layout_width="match_parent"
-            android:layout_height="235dp"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:gravity="left"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4) CARING FOR OUR COMMON HOME" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:src="@drawable/commonhome"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView" />
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/white"
-            android:alpha="0.7">
-        <com.codesgood.views.JustifiedTextView
+            android:orientation="vertical">
+        <TextView
             android:text="@string/uaps_four"
-            style="@style/paragraphBold"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="7dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         </LinearLayout>
+            <!--        4-->
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
