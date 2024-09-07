@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context=".fragments.HomeFragmentLibrary">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:text="Spiritual Exercises"
+          android:textColor="@color/white"
+          android:shadowColor="@color/text_shadow"
+          android:shadowDx="1"
+          android:shadowDy="1"
+          android:shadowRadius="2"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:elevation="5dp"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintBottom_toTopOf="@id/library_item_summary_body"/>
+      <TextView
+          android:id="@+id/library_item_summary_body"
+          android:text="The Spiritual Exercises are a compilation of meditations, prayers, and contemplative practices developed by St. Ignatius Loyola to help people deepen their relationship with God."
+          android:fontFamily="@font/opensansregular"
+          android:textColor="@color/white"
+          android:shadowColor="@color/text_shadow"
+          android:shadowDx="1"
+          android:shadowDy="1"
+          android:shadowRadius="2"
+          android:textSize="17sp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:elevation="5dp"
+          app:layout_constraintBottom_toTopOf="@id/button_open_spiritual_exercises"
+          app:layout_constraintLeft_toLeftOf="parent" />
+      <Button
+          android:text="Open Spiritual Exercises"
+          android:textSize="12sp"
+          android:textAllCaps="true"
+          android:id="@+id/button_open_spiritual_exercises"
+          android:layout_width="wrap_content"
+          android:elevation="15dp"
+          android:paddingRight="9dp"
+          android:paddingLeft="9dp"
+          android:background="@drawable/bgyellow"
+          android:textColor="#000080"
+          android:layout_height="43dp"
+          android:layout_margin="5dp"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"/>
+      <com.google.android.material.imageview.ShapeableImageView
+          app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+          android:id="@+id/img_news_summary"
+          android:src="@drawable/bg_spiritualexercises_summary"
+          android:scaleType="centerCrop"
+          android:layout_width="match_parent"
+          android:layout_height="240dp"
+          android:background="#ccc"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"/>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/the_pilgrim"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:elevation="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/the_pilgrim_summary_body"/>
+        <TextView
+            android:id="@+id/the_pilgrim_summary_body"
+            android:text="After he had recovered sufficiently to walk again, Íñigo resolved to begin a pilgrimage to the Holy Land to 'kiss the earth where our Lord had walked', and to do stricter penances."
+            android:fontFamily="@font/opensansregular"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toTopOf="@id/button_open_the_pilgrim"
+            app:layout_constraintLeft_toLeftOf="parent" />
+        <Button
+            android:text="Open The Pilgrim"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:id="@+id/button_open_the_pilgrim"
+            android:layout_width="wrap_content"
+            android:elevation="15dp"
+            android:paddingRight="9dp"
+            android:paddingLeft="9dp"
+            android:background="@drawable/bgyellow"
+            android:textColor="#000080"
+            android:layout_height="43dp"
+            android:layout_margin="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+            android:id="@+id/img_the_pilgrim"
+            android:src="@drawable/thepilgrim"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#ccc"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/jesuit_jargon"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:elevation="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/jesuit_jargon_summary_body"/>
+        <TextView
+            android:id="@+id/jesuit_jargon_summary_body"
+            android:text="The educational and pastoral institutions that the Society of Jesus sponsors are known as apostolates because their goal is to further the faith-spreading activity of the Church that flows out of the first apostles."
+            android:fontFamily="@font/opensansregular"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toTopOf="@id/button_open_jesuit_jargon"
+            app:layout_constraintLeft_toLeftOf="parent" />
+        <Button
+            android:text="Open Jesuit Jargon"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:id="@+id/button_open_jesuit_jargon"
+            android:layout_width="wrap_content"
+            android:elevation="15dp"
+            android:paddingRight="9dp"
+            android:paddingLeft="9dp"
+            android:background="@drawable/bgyellow"
+            android:textColor="#000080"
+            android:layout_height="43dp"
+            android:layout_margin="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+            android:id="@+id/img_jesuit_jargon"
+            android:src="@drawable/bg_img_jesuitjargon"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#ccc"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Periodicals"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:elevation="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/periodicals_summary_body"/>
+        <TextView
+            android:id="@+id/periodicals_summary_body"
+            android:text="Periodicals for AOR Jesuits. Get to read them here."
+            android:fontFamily="@font/opensansregular"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toTopOf="@id/button_open_periodicals"
+            app:layout_constraintLeft_toLeftOf="parent" />
+        <Button
+            android:text="Open Periodicals"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:id="@+id/button_open_periodicals"
+            android:layout_width="wrap_content"
+            android:elevation="15dp"
+            android:paddingRight="9dp"
+            android:paddingLeft="9dp"
+            android:background="@drawable/bgyellow"
+            android:textColor="#000080"
+            android:layout_height="43dp"
+            android:layout_margin="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+            android:id="@+id/img_periodicals"
+            android:src="@drawable/bg_img_periodicals_summary"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#ccc"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

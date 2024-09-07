@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayoutDialog"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:elevation="10dp"
+    android:background="@drawable/setupdialogbackground">
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_rawRes="@raw/animation_lmdccciu"
+        android:id="@+id/lottieView_in_setup_dialog"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:text="Setting up the application"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieView_in_setup_dialog"/>
+
+    <TextView
+        android:id="@+id/tv_body_1"
+        android:text="We are setting up the app for your usage, this won't take long."
+        android:textColor="#666"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="19sp"
+        android:textStyle="normal"
+        android:lineSpacingMultiplier="1.26"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heading"/>
+
+    <TextView
+        android:id="@+id/tv_body_2"
+        android:text="This is a one time operation it will not take place on your next visit to this app."
+        android:textColor="#666"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="25dp"
+        android:textSize="19sp"
+        android:textStyle="normal"
+        android:lineSpacingMultiplier="1.26"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_body_1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

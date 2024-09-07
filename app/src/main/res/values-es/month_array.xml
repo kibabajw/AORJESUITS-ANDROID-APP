@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="months_array">
+        <item>Enero</item>
+        <item>febrero</item>
+        <item>Marzo</item>
+        <item>abril</item>
+        <item>mayo</item>
+        <item>Junio</item>
+        <item>julio</item>
+        <item>Agosto</item>
+        <item>septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+</resources>

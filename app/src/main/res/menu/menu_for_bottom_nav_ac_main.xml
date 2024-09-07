@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_item_page_news"
+        android:enabled="true"
+        android:icon="@drawable/ic_news"
+        android:title="News" />
+    <item
+        android:id="@+id/nav_item_page_events"
+        android:enabled="true"
+        android:icon="@drawable/ic_events"
+        android:title="Events" />
+    <item
+        android:id="@+id/nav_item_page_prayers"
+        android:enabled="true"
+        android:icon="@drawable/ic_news"
+        android:title="Prayers" />
+    <item
+        android:id="@+id/nav_item_page_daily_examen"
+        android:enabled="true"
+        android:icon="@drawable/ic_news"
+        android:title="Examen" />
+    <item
+        android:id="@+id/nav_item_page_uaps"
+        android:enabled="true"
+        android:icon="@drawable/ic_news"
+        android:title="UAPs" />
+</menu>

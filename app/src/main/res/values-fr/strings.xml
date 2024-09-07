@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="offline_msg">Vous semblez être hors ligne</string>
+    <string name="sorry_an_error_occured">Désolé, une erreur s\'est produite</string>
+    <string name="no_events_for_selected_date">Aucun événement pour la date sélectionnée</string>
+
+    <string name="read_less">afficher moins</string>
+    <string name="read_more">afficher plus</string>
+    <string name="press_back_again_to_exit">Appuyez à nouveau pour quitter</string>
+
+    <string name="news">Actualités</string>
+    <string name="about_us">À propos de nous</string>
+    <string name="events">Événements</string>
+    <string name="historical">Archive</string>
+    <string name="prayers">Prières</string>
+    <string name="join_us">Rejoignez-nous</string>
+    <string name="daily_examen_title">Examen quotidien</string>
+
+    <string name="spiritual_exercises">Exercices spirituels</string>
+    <string name="jesuit_jargon">Jargon jésuite</string>
+    <string name="the_pilgrim">Le pèlerin</string>
+    <string name="support_us">Soutenez-nous</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="events_for_the_month">Événements du mois</string>
+</resources>

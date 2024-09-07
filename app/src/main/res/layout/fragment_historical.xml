@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HistoricalFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_for_image_and_title"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <TextView
+                android:id="@+id/historical_top_title"
+                android:text=""
+                android:textStyle="bold"
+                android:fontFamily="@font/opensansregular"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_historical_image"
+            app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="9dp"
+            app:layout_constraintTop_toBottomOf="@id/historical_top_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/historical_body"
+            app:layout_constraintTop_toBottomOf="@+id/cons_for_image_and_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/opensansregular"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginTop="10dp" />
+
+            <WebView
+                android:id="@+id/historical_webview"
+                app:layout_constraintTop_toBottomOf="@+id/historical_body"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:layout_marginBottom="40dp" />
+
+        <Button
+            android:id="@+id/btn_historical_prev"
+            android:text="Prev"
+            android:textColor="@color/white"
+            android:elevation="6dp"
+            android:background="@drawable/bgblue"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/historical_webview"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btn_historical_next"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:elevation="6dp"
+            android:background="@drawable/bgblue"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/historical_webview"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
